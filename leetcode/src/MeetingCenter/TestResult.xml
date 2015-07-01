@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<?xml-stylesheet type="text/xsl" href="report.xsl"?>
+<TestRun>
+  <FailedTests>
+    <FailedTest id="1">
+      <Name>CExampleTest::TestCase01</Name>
+      <FailureType>Assertion</FailureType>
+      <Location>
+        <File>CExampleTest.cpp</File>
+        <Line>65</Line>
+      </Location>
+      <Message>assertion failed
+- Expression: nCompanyOutTest == nCompanyOut
+</Message>
+    </FailedTest>
+  </FailedTests>
+  <SuccessfulTests>
+    <Test id="2">
+      <Name>CExampleTest::TestCase02</Name>
+    </Test>
+    <Test id="3">
+      <Name>CExampleTest::TestCase03</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>3</Tests>
+    <FailuresTotal>1</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>1</Failures>
+  </Statistics>
+</TestRun>

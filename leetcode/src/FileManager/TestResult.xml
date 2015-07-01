@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<?xml-stylesheet type="text/xsl" href="report.xsl"?>
+<TestRun>
+  <FailedTests></FailedTests>
+  <SuccessfulTests>
+    <Test id="1">
+      <Name>CExampleTest::TestCase01</Name>
+    </Test>
+    <Test id="2">
+      <Name>CExampleTest::TestCase02</Name>
+    </Test>
+    <Test id="3">
+      <Name>CExampleTest::TestCase03</Name>
+    </Test>
+    <Test id="4">
+      <Name>CExampleTest::TestCase04</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>4</Tests>
+    <FailuresTotal>0</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>0</Failures>
+  </Statistics>
+</TestRun>

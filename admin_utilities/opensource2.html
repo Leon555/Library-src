@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+		
+	<meta charset="utf-8" />
+	<meta name="Author" content="Apple Inc." />
+	<meta name="viewport" content="width=1024" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+	<link rel="stylesheet" href="http://images.apple.com/ac/globalheader/1.0/styles/globalheader.css" type="text/css" />
+
+	<title>Apple - Open Source</title>
+	<meta name="omni_page" content="Open Source" />
+	<meta name="Category" content="products,macs" />
+	<meta name="Description" content="As the first major computer company to make Open Source development a key part of its ongoing software strategy, Apple remains committed to the Open Source development model." />
+	<script src="http://images.apple.com/global/scripts/lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/lib/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/lib/sizzle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/browserdetect.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/apple_core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/search_decorator.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/ac_base/ac_base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/scripts/feedstatistics.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://images.apple.com/global/ac_retina/ac_retina.js" type="text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="http://images.apple.com/global/styles/base.css" type="text/css" />
+	<link rel="stylesheet" href="http://images.apple.com/opensource/styles/opensource.css" type="text/css" />
+</head>
+<body id="opensource">
+	
+
+<nav id="globalheader" class="globalheader gh-selected-tab-mac" role="navigation" aria-label="Global Navigation" data-hires="false" data-analytics-region="global nav" lang="en-US">
+	<div id="gh-content" class="gh-content">
+		<ul class="gh-menu">
+			<li id="gh-menu-icon-toggle" class="gh-menu-icon gh-menu-icon-toggle"><button id="gh-svg-icons" class="gh-svg-wrapper"><span class="gh-text-replace">Menu</span></button></li>
+			<li id="gh-menu-icon-home" class="gh-menu-icon gh-menu-icon-home"><a href="/"><span class="gh-text-replace">Apple</span></a></li>
+		</ul><!--/gh-menu-->
+		<div class="gh-nav">
+			<div class="gh-nav-view">
+				<ul class="gh-nav-list">
+					<li class="gh-tab gh-tab-apple"><a class="gh-tab-link" href="/"><span class="gh-tab-inner"><span class="gh-text-replace">Apple</span></span></a></li>
+					<li class="gh-tab gh-tab-store"><a class="gh-tab-link" href="http://store.apple.com/us"><span class="gh-tab-inner"><span class="gh-text-replace">Store</span></span></a></li>
+					<li class="gh-tab gh-tab-mac"><a class="gh-tab-link" href="/mac/"><span class="gh-tab-inner"><span class="gh-text-replace">Mac</span></span></a></li>
+					<li class="gh-tab gh-tab-iphone"><a class="gh-tab-link" href="/iphone/"><span class="gh-tab-inner"><span class="gh-text-replace">iPhone</span></span></a></li>
+					<li class="gh-tab gh-tab-watch"><a class="gh-tab-link" href="/watch/"><span class="gh-tab-inner"><span class="gh-text-replace">Watch</span></span></a></li>
+					<li class="gh-tab gh-tab-ipad"><a class="gh-tab-link" href="/ipad/"><span class="gh-tab-inner"><span class="gh-text-replace">iPad</span></span></a></li>
+					<li class="gh-tab gh-tab-ipod"><a class="gh-tab-link" href="/ipod/"><span class="gh-tab-inner"><span class="gh-text-replace">iPod</span></span></a></li>
+					<li class="gh-tab gh-tab-itunes"><a class="gh-tab-link" href="/itunes/"><span class="gh-tab-inner"><span class="gh-text-replace">iTunes</span></span></a></li>
+					<li class="gh-tab gh-tab-support"><a class="gh-tab-link" href="/support/"><span class="gh-tab-inner"><span class="gh-text-replace">Support</span></span></a></li>
+					<li id="gh-tab-search" class="gh-tab gh-tab-search">
+						<div id="gh-search" class="gh-search" role="search">
+							<form action="/search/" method="post" class="gh-search-form" id="gh-search-form" data-search-recommended-results='{"url":"/global/nav/scripts/shortcuts.php","requestName":"recommendedResults","queryName":"q","dataType":"xml"}' data-search-suggested-searches='{"url":"/search/instant/getSuggestions","requestName":"suggestedSearches","queryName":"query","queryParams":{"model":"marcom_en_US","locale":"en_US"},"dataType":"json"}'>
+								<div class="gh-search-input-wrapper">
+									<label for="gh-search-input" class="gh-text-replace">Search apple.com</label>
+									<input type="text" name="q" id="gh-search-input" class="gh-search-input" placeholder="Search apple.com" />
+								</div>
+								<button disabled="disabled" type="submit" id="gh-search-submit" class="gh-search-submit gh-search-magnify"><span class="gh-text-replace">Search apple.com</span></button>
+								<button disabled="disabled" type="reset" id="gh-search-reset" class="gh-search-reset"><span class="gh-text-replace">Reset</span></button>
+							</form>
+						</div>
+						<a class="gh-search-magnify" href="/search/"><span class="gh-text-replace">Search apple.com</span></a>
+					</li>
+				</ul>
+			</div>
+		</div><!--/gh-nav-->
+	</div>
+</nav><!--/globalheader-->
+
+<script src="http://images.apple.com/ac/globalheader/1.0/scripts/globalheader.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<div id="top">
+<!-- SiteCatalyst code version: H.8. Copyright 1997-2006 Omniture, Inc. -->
+
+
+	
+
+
+
+
+	
+
+
+<script type="text/javascript">
+/* RSID: */
+
+var s_account="appleglobal,appleosx,appleusmac";
+
+</script>
+
+
+	<script type="text/javascript" src="http://images.apple.com/metrics/scripts/s_code_h.js"></script>
+
+
+
+<script type="text/javascript">
+
+	s.pageName=AC.Tracking.pageName()+" (us)";
+
+	s.channel="www.us.osx";
+
+s.prop2="www.us.mac.software";
+
+
+	s.prop1="osx - mavericks";
+
+
+if (s.pageName) {
+    if(s.pageName.match(/thank you/)) {
+        s.eVar16 = s.prop16 = "Sign Up";
+        s.events = "event15";
+    }
+}
+
+if (AC && typeof(AC.Element) === 'object' && typeof(AC.Storage) === 'object') {
+	
+	s.prop25 = AC.Storage.getItem('s_macosx_nav');
+	AC.Storage.removeItem('s_macosx_nav');
+	
+	if (typeof AC.onDOMReady === 'function') {
+		AC.onDOMReady(function() {
+			function trackNav(link,loc) {
+				AC.Element.addEventListener(link, 'mouseup',function() {
+					AC.Storage.setItem('s_nav',loc,'0');
+				});
+			}
+			
+			var contentLinks = AC.Element.selectAll('.content a');
+			contentLinks.forEach(function(link) {
+				if(AC.Element.hasClassName(link, 'more')) {
+					trackNav(link, 'learn more');
+				}
+			});
+			
+			var promoLinks = AC.Element.selectAll('#promofooter a');
+			promoLinks.forEach(function(link) {
+				trackNav(link,'promo footer');
+			});
+		});
+	}
+}
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code = s.t();</script>
+<!-- End SiteCatalyst code version: H.8. -->
+</div>
+
+
+	<div id="main">
+		<div id="content" class="content">
+			<header class="hero">
+				<h1><img src="http://images.apple.com/opensource/images/title_opensource20090909.png" width="470" height="60" alt="Open at the source." /></h1>
+
+				<div class="grid2col">
+					<div class="column first">
+						<p>As the first major computer company to make Open Source development a key part of its ongoing software strategy, Apple remains committed to the Open Source development model. Major components of Mac OS X, including the UNIX core, are made available under Apple’s Open Source license, allowing developers and students to view source code, learn from it and submit suggestions and modifications. In addition, Apple uses software created by the Open Source community, such as the HTML rendering engine for <a href="/safari/">Safari</a>, and returns its enhancements to the community.</p>
+					</div><!--/first-->
+					<div class="column last">
+						<p>Apple believes that using Open Source methodology makes <a href="/osx/">Mac OS X</a> a more robust, secure operating system, as its core components have been subjected to the crucible of peer review for decades. Any problems found with this software can be immediately identified and fixed by Apple and the Open Source community.</p>
+						<p>Learn more about Open Source development at <a href="http://developer.apple.com/opensource/" class="more">http://developer.apple.com/opensource/</a></p>
+					</div><!--/last-->
+				</div><!--/grid2col-->
+			</header>
+
+			<section>
+				<h1>Open Source Projects:</h1>
+				<table border="0" cellpadding="0" cellspacing="0" id="proj">
+					<tr><th>Component</th><th>Project</th><th>Version</th><th>Used In</th></tr>
+					<tr><td>AddressBook-Metakit</td><td>Metakit</td><td>2.4.9.2</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>AirPortFamily</td><td>wpa_supplicant</td><td><a href='http://hostap.epitest.fi/releases/wpa_supplicant-0.3.9.tar.gz'>0.3.9</a></td><td>Mac OS X</td></tr>
+					<tr><td>AKCmds</td><td><a href='http://www.remotesensing.org/libtiff/'>LibTIFF</a></td><td><a href='http://dl.maptools.org/dl/libtiff/tiff-3.8.2.tar.gz'>3.8.2</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/amavisd/'>amavisd</a></td><td><a href='http://www.ijs.si/software/amavisd/'>amavisd</a></td><td><a href='http://www.ijs.si/software/amavisd/amavisd-new-2.6.5.tar.gz'>amavisd-new-2.6.5</a></td><td>Mac OS X, Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache/'>apache</a></td><td><a href='http://httpd.apache.org/'>apache</a></td><td><a href='http://www.apache.org/dist/httpd/httpd-2.2.19.tar.bz2'>2.2.19</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_bw/'>apache_mod_bw</a></td><td>apache_mod_bw</td><td><a href='http://apache.ivn.cl'>0.8</a></td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_encoding2/'>apache_mod_encoding2</a></td><td>apache_mod_encoding2</td><td>20021209</td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_jk/'>apache_mod_jk</a></td><td>apache_mod_jk</td><td>1.2.30</td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_perl/'>apache_mod_perl</a></td><td><a href='http://perl.apache.org/'>mod_perl</a></td><td><a href='http://perl.apache.org/dist/mod_perl-2.0.5.tar.gz'>2.0.5</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_php/'>apache_mod_php</a></td><td><a href='http://www.php.net/'>php</a></td><td><a href='http://us2.php.net/distributions/php-5.3.6.tar.bz2'>5.3.6</a></td><td>Mac OS X, Server, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freetype.org/freetype2/index.html'>FreeType 2</a></td><td><a href='http://cdnetworks-us-2.dl.sourceforge.net/project/freetype/freetype2/2.4.4/freetype-2.4.4.tar.bz2'>2.4.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.ijg.org/'>libjpeg</a></td><td><a href='http://www.ijg.org/files/jpegsrc.v8c.tar.gz'>8c</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.libpng.org/'>libpng</a></td><td><a href='http://prdownloads.sourceforge.net/libpng/libpng-1.5.2.tar.gz?download'>1.5.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.suhosin.org/'>suhosin</a></td><td><a href='http://download.suhosin.org/suhosin-patch-5.3.4-0.9.10.patch.gz'>0.9.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.xdebug.org/'>xdebug</a></td><td><a href='http://www.xdebug.org/files/xdebug-2.1.1.tgz'>2.1.1</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_python/'>apache_mod_python</a></td><td>apache_mod_python</td><td>3.3.1</td><td>Server</td></tr>
+					<tr><td>apache_mod_scgi_pubsub</td><td>apache_mod_scgi_pubsub</td><td>1.11-pubsub</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apache_mod_xsendfile/'>apache_mod_xsendfile</a></td><td>apache_mod_xsendfile</td><td>0.9</td><td>Server</td></tr>
+					<tr><td>AppleShareClientLib</td><td><a href='http://www.openssl.org/'>openssl</a></td><td><a href='http://www.openssl.org/source/openssl-0.9.1c.tar.gz'>0.9.1c</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/apr/'>apr</a></td><td><a href='http://apr.apache.org/'>apr</a></td><td>1.4.2</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://apr.apache.org/'>apr-util</a></td><td>1.3.10</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/autoconf/'>autoconf</a></td><td><a href='http://www.gnu.org/software/autoconf/'>autoconf</a></td><td><a href='http://ftp.gnu.org/gnu/autoconf/autoconf-2.61.tar.bz2'>2.61</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/autofs/'>autofs</a></td><td>autofs</td><td>N/A</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/automake/'>automake</a></td><td><a href='http://www.gnu.org/software/automake/'>automake</a></td><td><a href='http://ftp.gnu.org/gnu/automake/automake-1.10.tar.bz2'>1.10</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/awk/'>awk</a></td><td><a href='http://www.cs.princeton.edu/~bwk/btl.mirror/index.html'>awk</a></td><td><a href='http://www.cs.princeton.edu/~bwk/btl.mirror/awk.tar.gz'>October 23, 2007</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bash/'>bash</a></td><td><a href='http://www.gnu.org/software/bash/bash.html'>bash</a></td><td><a href='ftp://ftp.cwru.edu/pub/bash/bash-3.2.tar.gz'>3.2</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bc/'>bc</a></td><td><a href='http://www.gnu.org/software/bc/'>bc</a></td><td><a href='http://ftp.gnu.org/gnu/bc/bc-1.06.tar.gz'>1.06</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/BerkeleyDB/'>BerkeleyDB</a></td><td><a href='http://www.oracle.com/technology/products/berkeley-db/index.html'>BerkeleyDB</a></td><td><a href='http://download.oracle.com/berkeley-db/db-4.7.25.tar.gz'>4.7.25</a></td><td>Mac OS X, Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bind9/'>bind9</a></td><td>bind9</td><td><a href='http://ftp.isc.org/isc/bind9/9.7.3/bind-9.7.3.tar.gz'>9.7.3</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bison/'>bison</a></td><td><a href='http://www.gnu.org/software/bison/'>bison</a></td><td><a href='http://ftp.gnu.org/gnu/bison/bison-2.3.tar.bz2'>2.3</a></td><td>Xcode Tools</td></tr>
+					<tr><td>bsdiff</td><td><a href='http://www.daemonology.net/bsdiff/'>bsdiff</a></td><td><a href='http://www.daemonology.net/bsdiff/bsdiff-4.3.tar.gz'>4.3</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bsdmake/'>bsdmake</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/make/'>bsdmake</a></td><td>2006-04-12</td><td>Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/share/mk/'>bsdmake-mk</a></td><td>2005-10-18</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/bzip2/'>bzip2</a></td><td><a href='http://www.bzip.org/'>bzip2</a></td><td><a href='http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz'>1.0.6</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/cctools/'>cctools</a></td><td><a href='http://www.gnu.org/home.html'>gas</a></td><td>1.38.1</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ChatServer/'>ChatServer</a></td><td><a href='http://jabberd2.xiaoka.com/'>jabberd2</a></td><td><a href='http://codex.xiaoka.com/pub/jabberd2/releases/jabberd-2.2.13.tar.bz2'>2.2.13</a></td><td>Server</td></tr>
+					<tr><td>" "</td><td><a href='http://www.gnu.org/software/libidn/'>libidn</a></td><td>0.6.14</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.corpit.ru/mjt/udns.html'>udns</a></td><td>0.0.9</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://code.google.com/p/proxy65/'>Proxy65</a></td><td>1.2.0</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/Chess/'>Chess</a></td><td><a href='http://sjeng.org/'>sjeng</a></td><td><a href='http://sjeng.org/ftp/Sjeng-Free-11.2.tar.gz'>11.2</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/clamav/'>clamav</a></td><td><a href='http://www.clamav.net'>clamav</a></td><td><a href='http://downloads.sourceforge.net/clamav/clamav-0.97.tar.gz'>0.97</a></td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/CommonCrypto/'>CommonCrypto</a></td><td><a href='http://www.openssl.org/'>openssl</a></td><td><a href='http://www.openssl.org/source/openssl-0.9.6.tar.gz'>openssl-0.9.6</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td>Gladman AES</td><td>aes-src-26-08-05</td><td>-</td></tr>
+					<tr><td>" "</td><td>Gladman SHA2</td><td>sha-26-08-05</td><td>-</td></tr>
+					<tr><td>" "</td><td>libTomCrypt</td><td>1.17</td><td>-</td></tr>
+					<tr><td>CoreCollaboration</td><td>abstract</td><td>1.0.0</td><td>Server</td></tr>
+					<tr><td>" "</td><td>actionmailer</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>actionpack</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>activemodel</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>activerecord</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>activeresource</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>activesupport</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>arel</td><td>0.3.3</td><td>-</td></tr>
+					<tr><td>" "</td><td>builder</td><td>2.1.2</td><td>-</td></tr>
+					<tr><td>" "</td><td>bundler</td><td>0.9.23</td><td>-</td></tr>
+					<tr><td>" "</td><td>erubis</td><td>2.6.5</td><td>-</td></tr>
+					<tr><td>" "</td><td>i18n</td><td>0.3.7</td><td>-</td></tr>
+					<tr><td>" "</td><td>json_pure</td><td>1.2.0</td><td>-</td></tr>
+					<tr><td>" "</td><td>libxml-ruby</td><td>1.1.3</td><td>-</td></tr>
+					<tr><td>" "</td><td>mail</td><td>2.1.5.3</td><td>-</td></tr>
+					<tr><td>" "</td><td>memcache-client</td><td>1.8.2</td><td>-</td></tr>
+					<tr><td>" "</td><td>mime-types</td><td>1.16</td><td>-</td></tr>
+					<tr><td>" "</td><td>msgpack</td><td>0.3.9apple</td><td>-</td></tr>
+					<tr><td>" "</td><td>patron</td><td>0.4.5</td><td>-</td></tr>
+					<tr><td>" "</td><td>polyglot</td><td>0.3.1</td><td>-</td></tr>
+					<tr><td>" "</td><td>rack</td><td>1.1.0</td><td>-</td></tr>
+					<tr><td>" "</td><td>rack-mount</td><td>0.6.3</td><td>-</td></tr>
+					<tr><td>" "</td><td>rack-test</td><td>0.5.3</td><td>-</td></tr>
+					<tr><td>" "</td><td>rails</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>railties</td><td>3.0.0.beta2</td><td>-</td></tr>
+					<tr><td>" "</td><td>rake</td><td>0.8.7</td><td>-</td></tr>
+					<tr><td>" "</td><td>sprockets</td><td>1.0.2</td><td>-</td></tr>
+					<tr><td>" "</td><td>sqlite3-ruby</td><td>1.2.5</td><td>-</td></tr>
+					<tr><td>" "</td><td>text-format</td><td>1.0.0</td><td>-</td></tr>
+					<tr><td>" "</td><td>text-hyphen</td><td>1.0.0</td><td>-</td></tr>
+					<tr><td>" "</td><td>thor</td><td>0.13.4</td><td>-</td></tr>
+					<tr><td>" "</td><td>treetop</td><td>1.4.5</td><td>-</td></tr>
+					<tr><td>" "</td><td>tzinfo</td><td>0.3.20</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://lxml.de/'>lxml</a></td><td><a href='http://lxml.de/files/lxml-2.2.8.tgz'>2.2.8</a></td><td>-</td></tr>
+					<tr><td>CPAN</td><td><a href='http://search.cpan.org/'>Algorithm-Annotate</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CL/CLKAO/Algorithm-Annotate-0.10.tar.gz'>0.10</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Algorithm-C3</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Algorithm-C3-0.08.tar.gz'>0.08</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Algorithm-Diff</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NE/NEDKONZ/Algorithm-Diff-1.1902.tar.gz'>1.1902</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>App-CLI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AL/ALEXMV/App-CLI-0.08.tar.gz'>0.08</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>App-CLI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CO/CORNELIUS/App-CLI-0.313.tar.gz'>0.313</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Archive-Zip</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Archive-Zip-1.30.tar.gz'>1.30</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Authen-SASL</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/Authen-SASL-2.14.tar.gz'>2.14</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Authen-SASL</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/Authen-SASL-2.15.tar.gz'>2.15</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>BerkeleyDB</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PM/PMQS/BerkeleyDB-0.42.tar.gz'>0.42</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>BerkeleyDB</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PM/PMQS/BerkeleyDB-0.43.tar.gz'>0.43</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Bit-Vector</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/Bit-Vector-7.1.tar.gz'>7.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Carp-Clan</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/Carp-Clan-6.04.tar.gz'>6.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-Accessor</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/K/KA/KASEI/Class-Accessor-0.34.tar.gz'>0.34</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-Autouse</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Class-Autouse-1.29.tar.gz'>1.29</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-C3</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Class-C3-0.22.tar.gz'>0.22</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-C3</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Class-C3-0.23.tar.gz'>0.23</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-Data-Inheritable</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TM/TMTM/Class-Data-Inheritable-0.08.tar.gz'>0.08</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-MOP</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Class-MOP-1.00.tar.gz'>1.00</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Class-MOP</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Class-MOP-1.11.tar.gz'>1.11</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Compress-Bzip2</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AR/ARJAY/Compress-Bzip2-2.09.tar.gz'>2.09</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Convert-ASN1</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/Convert-ASN1-0.22.tar.gz'>0.22</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Convert-BinHex</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/E/ER/ERYQ/Convert-BinHex-1.119.tar.gz'>1.119</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Convert-TNEF</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOUGW/Convert-TNEF-0.17.tar.gz'>0.17</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Convert-UUlib</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/Convert-UUlib-1.33.tar.gz'>1.33</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Crypt-OpenSSL-RSA</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/I/IR/IROBERTS/Crypt-OpenSSL-RSA-0.26.tar.gz'>0.26</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Crypt-OpenSSL-Random</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/I/IR/IROBERTS/Crypt-OpenSSL-Random-0.04.tar.gz'>0.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>DBD-SQLite</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/DBD-SQLite-1.29.tar.gz'>1.29</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>DBD-SQLite</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/DBD-SQLite-1.31.tar.gz'>1.31</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>DBI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.609.tar.gz'>1.609</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>DBI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.615.tar.gz'>1.615</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Data-Hierarchy</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CL/CLKAO/Data-Hierarchy-0.34.tar.gz'>0.34</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Data-OptList</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Data-OptList-0.106.tar.gz'>0.106</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Date-Calc</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/Date-Calc-6.3.tar.gz'>6.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Devel-GlobalDestruction</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NU/NUFFIN/Devel-GlobalDestruction-0.02.tar.gz'>0.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Devel-GlobalDestruction</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Devel-GlobalDestruction-0.03.tar.gz'>0.03</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Digest-CRC</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/O/OL/OLIMAUL/Digest-CRC-0.14.tar.gz'>0.14</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Digest-CRC</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/O/OL/OLIMAUL/Digest-CRC-0.16.tar.gz'>0.16</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Digest-HMAC</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-HMAC-1.02.tar.gz'>1.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Digest-SHA1</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-SHA1-2.12.tar.gz'>2.12</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Digest-SHA1</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Digest-SHA1-2.13.tar.gz'>2.13</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Dist-CheckConflicts</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Dist-CheckConflicts-0.02.tar.gz'>0.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Encode-Detect</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JG/JGMYERS/Encode-Detect-1.01.tar.gz'>1.01</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Error</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/Error-0.17016.tar.gz'>0.17016</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Expect</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RG/RGIERSIG/Expect-1.21.tar.gz'>1.21</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>File-Slurp</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/File-Slurp-9999.13.tar.gz'>9999.13</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>File-chdir</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/File-chdir-0.1002.tar.gz'>0.1002</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>File-chdir</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/File-chdir-0.1004.tar.gz'>0.1004</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Font-AFM</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/Font-AFM-1.20.tar.gz'>1.20</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>FreezeThaw</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/I/IL/ILYAZ/modules/FreezeThaw-0.50.tar.gz'>0.50</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>FreezeThaw</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/I/IL/ILYAZ/modules/FreezeThaw-0.5001.tar.gz'>0.5001</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>GSSAPI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AG/AGROLMS/GSSAPI-0.26.tar.gz'>0.26</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>GSSAPI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AG/AGROLMS/GSSAPI-0.28.tar.gz'>0.28</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Geography-Countries</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AB/ABIGAIL/Geography-Countries-2009041301.tar.gz'>2009041301</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Format</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/HTML-Format-2.04.tar.gz'>2.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Parser</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-3.64.tar.gz'>3.64</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Parser</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/HTML-Parser-3.68.tar.gz'>3.68</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Tagset</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/HTML-Tagset-3.20.tar.gz'>3.20</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Tree</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PE/PETEK/HTML-Tree-3.23.tar.gz'>3.23</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>HTML-Tree</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JF/JFEARN/HTML-Tree-4.1.tar.gz'>4.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Digest</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CL/CLKAO/IO-Digest-0.10.tar.gz'>0.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Pager</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JP/JPIERCE/IO-Pager-0.06.tgz'>0.06</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Socket-INET6</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-2.57.tar.gz'>2.57</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Socket-INET6</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SH/SHLOMIF/IO-Socket-INET6-2.65.tar.gz'>2.65</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Socket-SSL</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SU/SULLR/IO-Socket-SSL-1.35.tar.gz'>1.35</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-String</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/IO-String-1.08.tar.gz'>1.08</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Stty</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AU/AUSCHUTZ/IO-Stty-.02.tar.gz'>.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Stty</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IO-Stty-0.03.tar.gz'>0.03</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Tty</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RG/RGIERSIG/IO-Tty-1.08.tar.gz'>1.08</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-Tty</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IO-Tty-1.10.tar.gz'>1.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IO-stringy</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DS/DSKOLL/IO-stringy-2.110.tar.gz'>2.110</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>IP-Country</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NW/NWETTERS/IP-Country-2.27.tar.gz'>2.27</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Inline</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SI/SISYPHUS/Inline-0.46.tar.gz'>0.46</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Inline-Python</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NI/NINE/Inline-Python-0.38.tar.gz'>0.38</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Inline-Struct</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NE/NEILW/Inline-Struct-0.06.tar.gz'>0.06</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Inline-Wrapper</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/I/IN/INFIDEL/Inline-Wrapper-0.05.tar.gz'>0.05</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Internals</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/Internals-1.1.tar.gz'>1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>List-MoreUtils</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/V/VP/VPARSEVAL/List-MoreUtils-0.22.tar.gz'>0.22</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>List-MoreUtils</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/List-MoreUtils-0.26.tar.gz'>0.26</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Locale-Maketext-Lexicon</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DRTECH/Locale-Maketext-Lexicon-0.79.tar.gz'>0.79</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Locale-Maketext-Lexicon</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DRTECH/Locale-Maketext-Lexicon-0.82.tar.gz'>0.82</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MIME-tools</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DONEILL/MIME-tools-5.427.tar.gz'>5.427</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MIME-tools</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DONEILL/MIME-tools-5.428.tar.gz'>5.428</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MLDBM</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/MLDBM-2.04.tar.gz'>2.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MRO-Compat</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/MRO-Compat-0.11.tar.gz'>0.11</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-AppleEvents-Simple</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Mac-AppleEvents-Simple-1.18.tar.gz'>1.18</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-Apps-Launch</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Mac-Apps-Launch-1.93.tar.gz'>1.93</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-Carbon</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Mac-Carbon-0.82.tar.gz'>0.82</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-Errors</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/Mac-Errors-1.14.tar.gz'>1.14</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-Glue</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Mac-Glue-1.30.tar.gz'>1.30</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mac-OSA-Simple</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Mac-OSA-Simple-1.09.tar.gz'>1.09</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mail-DKIM</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JA/JASLONG/Mail-DKIM-0.38.tar.gz'>0.38</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mail-DKIM</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JA/JASLONG/Mail-DKIM-0.39.tar.gz'>0.39</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mail-SPF-Query</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JM/JMEHNLE/mail-spf-query/Mail-SPF-Query-1.999.1.tar.gz'>1.999.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Mail-SPF</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JM/JMEHNLE/mail-spf/Mail-SPF-v2.007.tar.gz'>v2.007</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MailTools</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/MailTools-2.06.tar.gz'>2.06</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>MailTools</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MA/MARKOV/MailTools-2.07.tar.gz'>2.07</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Moose</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Moose-1.01.tar.gz'>1.01</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Moose</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Moose-1.21.tar.gz'>1.21</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-CIDR-Lite</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOUGW/Net-CIDR-Lite-0.20.tar.gz'>0.20</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-CIDR-Lite</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOUGW/Net-CIDR-Lite-0.21.tar.gz'>0.21</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-DNS</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CR/CREIN/Net-DNS-0.66.tar.gz'>0.66</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-DNS-Resolver-Programmable</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JM/JMEHNLE/net-dns-resolver-programmable/Net-DNS-Resolver-Programmable-v0.003.tar.gz'>v0.003</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-IP</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MA/MANU/Net-IP-1.25.tar.gz'>1.25</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-SSLeay</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Net-SSLeay-1.36.tar.gz'>1.36</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-Server</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/Net-Server-0.97.tar.gz'>0.97</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Net-Server</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/Net-Server-0.99.tar.gz'>0.99</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>NetAddr-IP</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MI/MIKER/NetAddr-IP-4.028.tar.gz'>4.028</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>NetAddr-IP</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MI/MIKER/NetAddr-IP-4.037.tar.gz'>4.037</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Package-DeprecationManager</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Package-DeprecationManager-0.10.tar.gz'>0.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Package-Stash</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Package-Stash-0.29.tar.gz'>0.29</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Package-Stash-XS</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Package-Stash-XS-0.22.tar.gz'>0.22</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Params-Util</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Params-Util-1.00.tar.gz'>1.00</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Params-Util</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Params-Util-1.03.tar.gz'>1.03</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Parse-RecDescent</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DC/DCONWAY/Parse-RecDescent-1.965001.tar.gz'>1.965001</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Path-Class</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/K/KW/KWILLIAMS/Path-Class-0.18.tar.gz'>0.18</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Path-Class</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/K/KW/KWILLIAMS/Path-Class-0.21.tar.gz'>0.21</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>PerlIO-eol</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/PerlIO-eol-0.14.tar.gz'>0.14</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>PerlIO-gzip</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.18.tar.gz'>0.18</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>PerlIO-via-Bzip2</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AR/ARJEN/PerlIO-via-Bzip2-0.02.tar.gz'>0.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>PerlIO-via-dynamic</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CL/CLKAO/PerlIO-via-dynamic-0.13.tar.gz'>0.13</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>PerlIO-via-symlink</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CL/CLKAO/PerlIO-via-symlink-0.05.tar.gz'>0.05</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Pod-Readme</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RR/RRWO/Pod-Readme-0.09.tar.gz'>0.09</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Pod-Readme</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/B/BI/BIGPRESH/Pod-Readme-0.10.tar.gz'>0.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Proc-Reliable</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DG/DGOLD/Proc-Reliable-1.16.tar.gz'>1.16</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Regexp-Common</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AB/ABIGAIL/Regexp-Common-2010010201.tar.gz'>2010010201</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Scope-Guard</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CH/CHOCOLATE/Scope-Guard-0.12.tar.gz'>0.12</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Scope-Guard</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CH/CHOCOLATE/Scope-Guard-0.20.tar.gz'>0.20</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Socket6</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/U/UM/UMEMOTO/Socket6-0.23.tar.gz'>0.23</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sub-Exporter</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Sub-Exporter-0.982.tar.gz'>0.982</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sub-Install</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Sub-Install-0.925.tar.gz'>0.925</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sub-Name</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/X/XM/XMATH/Sub-Name-0.04.tar.gz'>0.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sub-Name</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/F/FL/FLORA/Sub-Name-0.05.tar.gz'>0.05</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sub-Uplevel</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-0.22.tar.gz'>0.22</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Sys-Hostname-Long</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/S/SC/SCOTT/Sys-Hostname-Long-1.4.tar.gz'>1.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Task-Weaken</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Task-Weaken-1.03.tar.gz'>1.03</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>TermReadKey</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JS/JSTOWE/TermReadKey-2.30.tar.gz'>2.30</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Exception</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADIE/Test-Exception-0.29.tar.gz'>0.29</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Exception</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADIE/Test-Exception-0.31.tar.gz'>0.31</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Fatal</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Test-Fatal-0.005.tar.gz'>0.005</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Pod</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DW/DWHEELER/Test-Pod-1.42.tar.gz'>1.42</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Pod</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DW/DWHEELER/Test-Pod-1.44.tar.gz'>1.44</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Test-Requires</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Test-Requires-0.06.tar.gz'>0.06</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Text-Balanced</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Text-Balanced-2.02.tar.gz'>2.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Time-Epoch</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CN/CNANDOR/Time-Epoch-0.02.tar.gz'>0.02</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Time-Progress</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CA/CADE/Time-Progress-1.5.tar.gz'>1.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Time-Progress</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CA/CADE/Time-Progress-1.7.tar.gz'>1.7</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>TimeDate</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/TimeDate-1.20.tar.gz'>1.20</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Try-Tiny</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/N/NU/NUFFIN/Try-Tiny-0.04.tar.gz'>0.04</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Try-Tiny</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/D/DO/DOY/Try-Tiny-0.09.tar.gz'>0.09</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>UNIVERSAL-require</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MS/MSCHWERN/UNIVERSAL-require-0.13.tar.gz'>0.13</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>URI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/URI-1.53.tar.gz'>1.53</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>URI</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/URI-1.56.tar.gz'>1.56</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>Unix-Syslog</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MH/MHARNISCH/Unix-Syslog-1.1.tar.gz'>1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-LibXML</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PA/PAJAS/XML-LibXML-1.70.tar.gz'>1.70</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-LibXSLT</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PA/PAJAS/XML-LibXSLT-1.70.tar.gz'>1.70</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-NamespaceSupport</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.10.tar.gz'>1.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-NamespaceSupport</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-1.11.tar.gz'>1.11</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-Parser</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/XML-Parser-2.36.tar.gz'>2.36</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-Parser</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/C/CH/CHORNY/XML-Parser-2.40.tar.gz'>2.40</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-SAX</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-SAX-0.96.tar.gz'>0.96</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-Simple</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-Simple-2.18.tar.gz'>2.18</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-Writer</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JO/JOSEPHW/XML-Writer-0.606.tar.gz'>0.606</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-Writer</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/J/JO/JOSEPHW/XML-Writer-0.612.tar.gz'>0.612</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>XML-XPath</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/M/MS/MSERGEANT/XML-XPath-1.13.tar.gz'>1.13</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>YAML-Syck</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AU/AUDREYT/YAML-Syck-1.07.tar.gz'>1.07</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>YAML-Syck</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/A/AV/AVAR/YAML-Syck-1.17.tar.gz'>1.17</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>libwww-perl</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/libwww-perl-5.837.tar.gz'>5.837</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>perl-ldap</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/perl-ldap-0.40.tar.gz'>0.40</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://search.cpan.org/'>perl-ldap</a></td><td><a href='http://search.cpan.org/CPAN/authors/id/G/GB/GBARR/perl-ldap-0.4001.tar.gz'>0.4001</a></td><td>-</td></tr>
+					<tr><td>CRFSuite</td><td>CRFSuite</td><td>0.11</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/cron/'>cron</a></td><td><a href='http://www.freebsd.org/'>cron</a></td><td>2007-02-15</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/cups/'>cups</a></td><td><a href='http://www.cups.org/'>CUPS</a></td><td><a href='http://www.cups.org/software.php'>1.5.0 (r9834)</a></td><td>Mac OS X, Printing</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/curl/'>curl</a></td><td><a href='http://curl.haxx.se/'>curl</a></td><td><a href='http://curl.haxx.se/download/curl-7.21.4.tar.bz2'>7.21.4</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/cvs/'>cvs</a></td><td><a href='http://www.nongnu.org/cvs/'>cvs</a></td><td><a href='ftp://ftp.gnu.org/gnu/non-gnu/cvs/source/feature/1.12.13/cvs-1.12.13.tar.bz2'>1.12.13</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/cxxfilt/'>cxxfilt</a></td><td><a href='http://sourceware.org/binutils/'>binutils</a></td><td>070207</td><td>Mac OS X</td></tr>
+					<tr><td>CyrusIMAP</td><td><a href='http://asg.web.cmu.edu/cyrus'>Cyrus IMAP Server</a></td><td><a href='http://ftp.andrew.cmu.edu/pub/cyrus/cyrus-imapd-2.3.8.tar.gz'>cyrus_imap_2.3.8</a></td><td>Server</td></tr>
+					<tr><td>DataDetectorsCore</td><td><a href='http://www.openfst.org'>OpenFST</a></td><td>1.2.4</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.icu-project.org/'>International Components for Unicode</a></td><td><a href='ftp://ftp.software.ibm.com/software/globalization/icu/3.6/icu4c-3_6-src.tgz'>3.6</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/distcc/'>distcc</a></td><td><a href='http://distcc.googlecode.com'>distcc</a></td><td>3.1</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/doc_cmds/'>doc_cmds</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/checknr/'>checknr</a></td><td>2004-09-18</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/colcrt/'>colcrt</a></td><td>2004-09-18</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/libexec/getNAME/'>getNAME</a></td><td>2004-09-18</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/makewhatis/'>makewhatis</a></td><td>2004-09-18</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/dovecot/'>dovecot</a></td><td><a href='http://www.dovecot.org'>dovecot</a></td><td><a href='http://dovecot.org/releases/2.0/dovecot-2.0.13.tar.gz'>Released v2.0.13</a></td><td>Server</td></tr>
+					<tr><td>" "</td><td><a href='http://pigeonhole.dovecot.org/'>dovecot-pigeonhole</a></td><td><a href='http://www.rename-it.nl/dovecot/2.0/dovecot-2.0-pigeonhole-0.2.3.tar.gz'>Released v0.2.3</a></td><td>-</td></tr>
+					<tr><td>DSPasswordServerFramework</td><td><a href='http://openssh.org/'>OpenSSH</a></td><td>3.8.1p1</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/dtrace/'>dtrace</a></td><td>dtrace</td><td><a href='http://hub.opensolaris.org/bin/view/downloads/on'>on-src-20060828</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/efax/'>efax</a></td><td><a href='http://www.cce.com/efax/'>efax</a></td><td><a href='http://www.cce.com/efax/download/efax-0.9a-001114.tar.gz'>0.9a-001114</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/emacs/'>emacs</a></td><td><a href='http://www.gnu.org/software/emacs/emacs.html'>Emacs</a></td><td><a href='http://ftp.gnu.org/pub/gnu/emacs/emacs-22.1.tar.gz'>22.1</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/enscript/'>enscript</a></td><td><a href='http://www.codento.com/people/mtr/genscript/'>enscript</a></td><td><a href='http://www.iki.fi/mtr/genscript/enscript-1.6.4.tar.gz'>1.6.4</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/expat/'>expat</a></td><td><a href='http://expat.sourceforge.net/'>expat</a></td><td><a href='http://dl.sourceforge.net/sourceforge/expat/expat-2.0.1.tar.gz'>2.0.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>FaceCoreLight</td><td>libsvm</td><td><a href='http://www.csie.ntu.edu.tw/~cjlin/libsvm/'>2.88</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/fetchmail/'>fetchmail</a></td><td><a href='http://fetchmail.berlios.de'>fetchmail</a></td><td><a href='http://download.berlios.de/fetchmail/fetchmail-6.3.18.tar.bz2'>6.3.18</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/file/'>file</a></td><td>file</td><td><a href='ftp://ftp.astron.com/pub/file/file-5.04.tar.gz'>5.04</a></td><td>Mac OS X</td></tr>
+					<tr><td>FileSync</td><td><a href='http://burtleburtle.net/bob/'>lookup3</a></td><td><a href='http://burtleburtle.net/bob/c/lookup3.c'>n/a</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/flex/'>flex</a></td><td><a href='http://flex.sourceforge.net'>flex</a></td><td><a href='http://prdownloads.sourceforge.net/flex/flex-2.5.35.tar.bz2?download'>2.5.35</a></td><td>Xcode Tools</td></tr>
+					<tr><td>Fonts</td><td><a href='http://www.stixfonts.org/'>stixfonts</a></td><td><a href='http://sourceforge.net/projects/stixfonts/files/latest'>1.0.0</a></td><td>Mac OS X</td></tr>
+
+					<tr><td><a href='http://www.opensource.apple.com/source/gdb/'>gdb</a></td><td><a href='http://sourceware.org/gdb/'>gdb</a></td><td>6.3.50-20050815</td><td>Xcode Tools</td></tr>
+					<tr><td>giflib</td><td>giflib</td><td><a href='http://sourceforge.net/projects/giflib/'>giflib-4.1.6</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/Git/'>Git</a></td><td><a href='http://git-scm.com'>git</a></td><td><a href='http://kernel.org/pub/software/scm/git/git-1.7.4.4.tar.bz2'>1.7.4.4</a></td><td>Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://git-scm.com'>git-htmldocs</a></td><td><a href='http://kernel.org/pub/software/scm/git/git-htmldocs-1.7.4.4.tar.bz2'>1.7.4.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://git-scm.com'>git-manpages</a></td><td><a href='http://kernel.org/pub/software/scm/git/git-manpages-1.7.4.4.tar.bz2'>1.7.4.4</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/glibtool/'>glibtool</a></td><td><a href='http://www.gnu.org/software/libtool/'>glibtool</a></td><td><a href='http://ftp.gnu.org/gnu/libtool/libtool-2.2.10.tar.gz'>2.2.10</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gm4/'>gm4</a></td><td><a href='http://www.gnu.org/software/m4/'>m4</a></td><td><a href='http://ftp.gnu.org/gnu/m4/m4-1.4.6.tar.bz2'>1.4.6</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gnudiff/'>gnudiff</a></td><td><a href='http://www.gnu.org/software/diffutils/'>diffutils</a></td><td><a href='http://ftp.gnu.org/pub/gnu/diffutils/diffutils-2.8.1.tar.gz'>2.8.1</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gnumake/'>gnumake</a></td><td><a href='http://www.gnu.org/software/make/'>make</a></td><td><a href='ftp://ftp.gnu.org/gnu/make/make-3.81.tar.bz2'>3.81</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gnuserv/'>gnuserv</a></td><td><a href='http://meltin.net/hacks/emacs/'>gnuserv</a></td><td><a href='http://meltin.net/hacks/emacs/src/gnuserv-3.12.4.tar.gz'>3.12.4</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gnutar/'>gnutar</a></td><td><a href='http://www.gnu.org/software/tar/'>tar</a></td><td><a href='http://ftp.gnu.org/gnu/tar/tar-1.17.tar.bz2'>1.17</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gnuzip/'>gnuzip</a></td><td><a href='http://www.gzip.org/'>gzip</a></td><td><a href='ftp://ftp.gnu.org/gnu/gzip/gzip-1.3.12.tar.gz'>1.3.12</a></td><td>Mac OS X</td></tr>
+					<tr><td>GoogleContactSync</td><td><a href='http://code.google.com/p/gdata-objectivec-client/'>GData</a></td><td>1.6.0</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gpatch/'>gpatch</a></td><td><a href='http://www.gnu.org/software/patch/'>patch</a></td><td>2.5.8</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gperf/'>gperf</a></td><td><a href='http://www.gnu.org/software/gperf/'>gperf</a></td><td><a href='http://ftp.gnu.org/gnu/gperf/gperf-3.0.3.tar.gz'>3.0.3</a></td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/gpt/'>gpt</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/sbin/gpt/'>gpt</a></td><td>RELENG_7_3_0_RELEASE</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/grep/'>grep</a></td><td><a href='http://www.gnu.org/software/grep/'>grep</a></td><td>2.5.1</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/groff/'>groff</a></td><td><a href='http://www.gnu.org/software/groff/'>groff</a></td><td><a href='http://ftp.gnu.org/pub/gnu/groff/groff-1.19.2.tar.gz'>1.19.2</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/Heimdal/'>Heimdal</a></td><td><a href='http://www.h5l.org/'>Heimdal</a></td><td>1.2.99pre7</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/hunspell/'>hunspell</a></td><td><a href='http://hunspell.sourceforge.net/'>hunspell</a></td><td><a href='http://downloads.sourceforge.net/hunspell/hunspell-1.2.8.tar.gz'>1.2.8</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.sjp.pl/slownik/en/'>sjp.pl</a></td><td>20080831</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ICU/'>ICU</a></td><td><a href='http://www.icu-project.org/'>International Components for Unicode</a></td><td><a href='http://source.icu-project.org/repos/icu/icu/tags/release-4-6-1/'>4.6.1</a></td><td>Mac OS X</td></tr>
+					<tr><td>InternetServicesSupport</td><td><a href='http://expat.sourceforge.net/'>expat</a></td><td>1.95.5</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/iodbc/'>iodbc</a></td><td><a href='http://www.iodbc.org/'>iodbc</a></td><td><a href='http://www.iodbc.org/downloads/iODBC/libiodbc-3.52.6.tar.gz'>3.52.6</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ipsec/'>ipsec</a></td><td><a href='http://cvsweb.netbsd.org/bsdweb.cgi/src/crypto/dist/ipsec-tools/src'>racoon</a></td><td>Original version number unavailable, but later based on 0.6.7</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://cvsweb.netbsd.org/bsdweb.cgi/src/crypto/dist/ipsec-tools/src'>libipsec</a></td><td>Original version number unavailable, but later based on 0.6.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://cvsweb.netbsd.org/bsdweb.cgi/src/crypto/dist/ipsec-tools/src'>setkey</a></td><td>Original version number unavailable, but later based on 0.6.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://cvsweb.netbsd.org/bsdweb.cgi/src/crypto/dist/ipsec-tools/src'>racoonctl</a></td><td>Original version number unavailable, but later based on 0.6.5</td><td>-</td></tr>
+					<tr><td>JavaTools</td><td><a href='http://ant.apache.org/'>Ant</a></td><td><a href='http://archive.apache.org/dist/ant/source/apache-ant-1.8.2-src.zip'>1.8.2</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://www.junit.org/'>JUnit</a></td><td><a href='http://github.com/downloads/KentBeck/junit/junit4.8.2.zip'>4.8.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://maven.apache.org/'>Maven</a></td><td><a href='http://apache.mirrors.pair.com//maven/binaries/apache-maven-3.0.3-bin.zip'>3.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://db.apache.org/derby/'>Derby</a></td><td><a href='http://apache.ziply.com//db/derby/db-derby-10.8.1.2/db-derby-10.8.1.2-bin.zip'>10.8.1.2</a></td><td>-</td></tr>
+					<tr><td>KFonts</td><td><a href='http://hangeul.naver.com/share.nhn'>Nanum</a></td><td><a href='http://cdn.naver.com/naver/NanumFont/setupmac/NanumFontSetup_MacOS_OTF_ALL_hangeulcamp.zip'>Version 3.010;PS 1;hotconv 1.0.56;makeotf.lib2.0.21325</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ksh/'>ksh</a></td><td><a href='http://public.research.att.com/~gsf/download/'>ksh</a></td><td>2007-11-05</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://public.research.att.com/~gsf/download/'>ksh</a></td><td>2007-11-05</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/less/'>less</a></td><td><a href='http://www.greenwoodsoftware.com/less/'>less</a></td><td><a href='http://www.greenwoodsoftware.com/less/less-418.tar.gz'>418</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libarchive/'>libarchive</a></td><td><a href='http://code.google.com/p/libarchive/'>libarchive</a></td><td>2.8.3</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/Libcpp_kext/'>Libcpp_kext</a></td><td><a href='http://gcc.gnu.org/'>GCC</a></td><td>4.2.1</td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libcppabi/'>libcppabi</a></td><td><a href='http://gcc.gnu.org/'>gcc</a></td><td><a href='ftp://ftp.gnu.org/gnu/gcc/gcc-4.2.1/gcc-4.2.1.tar.bz2'>4.2.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libedit/'>libedit</a></td><td><a href='http://www.thrysoee.dk/editline/'>libedit</a></td><td><a href='http://www.thrysoee.dk/editline/libedit-20100424-3.0.tar.gz'>3.0</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libiconv/'>libiconv</a></td><td><a href='http://www.gnu.org/software/libiconv/'>libiconv</a></td><td><a href='http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.11.tar.gz'>1.11</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libJP2</td><td>libJP2</td><td>libJP2-5.1</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libjpeg</td><td>libjpeg</td><td>libjpeg-6b</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libOpenEXR</td><td></td><td><a href='http://www.openexr.com/downloads.html'>libOpenEXR-1.7.0</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libpcap/'>libpcap</a></td><td><a href='http://www.tcpdump.org/'>libpcap</a></td><td><a href='http://www.tcpdump.org/release/libpcap-1.0.0.tar.gz'>1.0.0</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libpng</td><td>libpng</td><td><a href='http://www.libpng.org/pub/png/libpng.html'>libpng-1.4.3</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libradiance</td><td></td><td>libRadiance</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libstdcxx/'>libstdcxx</a></td><td><a href='http://gcc.gnu.org/'>gcc</a></td><td><a href='ftp://ftp.gnu.org/gnu/gcc/gcc-4.2.1/gcc-4.2.1.tar.bz2'>4.2.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libsubversion</td><td><a href='http://subversion.apache.org/'>subversion</a></td><td><a href='http://subversion.tigris.org/downloads/subversion-1.6.16.tar.bz2'>1.6.16</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>libtiff</td><td>libtiff</td><td><a href='http://www.remotesensing.org/libtiff/'>libTIFF-3.9.4</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libutil/'>libutil</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/lib/libutil/'>libutil</a></td><td>2005-02-13</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://cvsweb.netbsd.org/bsdweb.cgi/~checkout~/src/lib/libutil/getmntopts.c?rev=1.3'>libutil</a></td><td>1.3</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libxml2/'>libxml2</a></td><td>libxml2</td><td>2.7.3</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/libxslt/'>libxslt</a></td><td>libxslt</td><td>1.1.24</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/lsof/'>lsof</a></td><td>lsof</td><td>4.84</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/lukemftp/'>lukemftp</a></td><td><a href='http://www.NetBSD.org/'>lukemftp</a></td><td><a href='ftp://ftp.netbsd.org/pub/NetBSD/misc/lukemftp/tnftp-20070806.tar.gz'>20070806</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/lukemftpd/'>lukemftpd</a></td><td><a href='http://www.NetBSD.org/'>tnftpd</a></td><td><a href='ftp://ftp.NetBSD.org/pub/NetBSD/misc/tnftp/tnftpd-20100324.tar.gz'>20100324</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/mailman/'>mailman</a></td><td><a href='http://www.list.org'>mailman</a></td><td><a href='http://ftp.gnu.org/gnu/mailman/mailman-2.1.14.tgz'>mailman 2.1.14</a></td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/man/'>man</a></td><td><a href='http://primates.ximian.com/~flucifredi/man/'>man</a></td><td><a href='http://primates.ximian.com/~flucifredi/man/man-1.6c.tar.gz'>1.6c</a></td><td>Mac OS X</td></tr>
+					<tr><td>MeCab</td><td><a href='http://mecab.sourceforge.net/'>MeCab</a></td><td><a href='http://downloads.sourceforge.net/mecab/mecab-0.95.tar.gz'>0.95</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/memcached/'>memcached</a></td><td><a href='http://memcached.org/'>memcached</a></td><td>1.4.5</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>MITKerberosShim</td><td>MITKerberosShim</td><td>1.0</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>mtest</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.sbin/mtest/'>mtest</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.sbin/mtest/'></a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/nano/'>nano</a></td><td><a href='http://www.nano-editor.org/'>nano</a></td><td><a href='http://www.nano-editor.org/dist/v2.0/nano-2.0.6.tar.gz'>2.0.6</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/nasm/'>nasm</a></td><td><a href='http://sourceforge.net/projects/nasm/'>nasm</a></td><td>0.98.40</td><td>Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ncurses/'>ncurses</a></td><td>ncurses</td><td><a href='ftp://invisible-island.net/ncurses/ncurses-5.7.tar.gz'>5.5</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/neon/'>neon</a></td><td><a href='http://webdav.org/neon/'>neon</a></td><td><a href='http://webdav.org/neon/neon-0.29.0.tar.gz'>0.29.0</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/net_snmp/'>net_snmp</a></td><td><a href='http://www.net-snmp.org/'>net-snmp</a></td><td>5.6</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/netcat/'>netcat</a></td><td><a href='http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/nc/'>nc</a></td><td>HEAD</td><td>Mac OS X</td></tr>
+					<tr><td>NotificationServer</td><td><a href='http://idavoll.ik.nu/'>idavoll</a></td><td><a href='http://idavoll.ik.nu/releases/0.9.1/idavoll-0.9.1.tar.gz'>0.9.1</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://wokkel.ik.nu/'>wokkel</a></td><td><a href='http://wokkel.ik.nu/releases/0.6.3/wokkel-0.6.3.tar.gz'>0.6.3</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ntp/'>ntp</a></td><td><a href='http://www.ntp.org'>ntp</a></td><td><a href='http://archive.ntp.org/ntp4/ntp-4.2/ntp-4.2.6.tar.gz'>4.2.6</a></td><td>Mac OS X</td></tr>
+					<tr><td>OpenAL</td><td><a href='http://developer.creative.com/landing.asp?cat=1&amp;amp;sbcat=31&amp;amp;top=38'>OpenAL</a></td><td><a href='http://developer.creative.com/articles/article.asp?cat=1&amp;amp;sbcat=31&amp;amp;top=38&amp;amp;aid=97&amp;amp;file=OpenAL_Installer_OSX.dmg'>1.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/OpenBSM/'>OpenBSM</a></td><td><a href='http://www.trustedbsd.org'>openbsm</a></td><td><a href='http://www.trustedbsd.org/downloads/openbsm-1.1-p2.tgz'>1.1p2</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>OpenLDAP</td><td><a href='http://www.openldap.org'>OpenLDAP</a></td><td><a href='ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/openldap-2.4.23.tgz'>2.4.23</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>OpenPAM</td><td><a href='http://www.openpam.org/'>OpenPAM</a></td><td><a href='http://downloads.sourceforge.net/openpam/openpam-20071221.tar.gz'>20071221</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/OpenSSH/'>OpenSSH</a></td><td><a href='http://www.openssh.org/'>OpenSSH</a></td><td><a href='http://ftp.OpenBSD.org/pub/OpenBSD/OpenSSH/portable'>5.6p1</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/OpenSSL097/'>OpenSSL097</a></td><td><a href='http://www.openssl.org/'>OpenSSL</a></td><td><a href='http://www.openssl.org/source/openssl-0.9.7l.tar.gz'>0.9.7l</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/OpenSSL098/'>OpenSSL098</a></td><td><a href='http://www.openssl.org/'>OpenSSL</a></td><td><a href='http://www.openssl.org/source/openssl-0.9.8r.tar.gz'>0.9.8r</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/passwordserver_sasl/'>passwordserver_sasl</a></td><td><a href='http://asg.web.cmu.edu/'>passwordserver_sasl</a></td><td>2.1.22</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/patch_cmds/'>patch_cmds</a></td><td><a href='http://invisible-island.net/diffstat/'>diffstat</a></td><td><a href='ftp://invisible-island.net/diffstat/diffstat-1.51.tgz'>1.51</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/patch/'>patch</a></td><td>2009-10-27</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/pcre/'>pcre</a></td><td><a href='http://pcre.org/'>pcre</a></td><td><a href='ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.02.tar.bz2'>8.02</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/perl/'>perl</a></td><td><a href='http://www.perl.com/'>perl</a></td><td><a href='http://www.cpan.org/src/perl-5.10.1.tar.bz2'>5.10.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://www.perl.com/'>perl</a></td><td><a href='http://www.cpan.org/src/perl-5.12.2.tar.bz2'>5.12.2</a></td><td>-</td></tr>
+					<tr><td>PodcastLibrary</td><td>Sinatra</td><td><a href='http://github.com/sinatra/sinatra'>1.0</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td>Builder</td><td><a href='http://rubygems.org/gems/builder'>2.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td>sqlite3-ruby</td><td><a href='http://rubygems.org/gems/sqlite3-ruby'>1.3.0</a></td><td>-</td></tr>
+					<tr><td>PodcastProducerServer</td><td><a href='http://rubyonrails.org/'>rails</a></td><td><a href='http://rubyforge.org/frs/?group_id=307'>2.3.5</a></td><td>Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/postfix/'>postfix</a></td><td><a href='http://www.postfix.org'>Postfix</a></td><td><a href='http://postfix.energybeam.com/source/official/postfix-2.8.3.tar.gz'>postfix-2.8.3</a></td><td>Mac OS X, Server</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/PostgreSQL/'>PostgreSQL</a></td><td><a href='http://postgresql.org/'>PostgreSQL</a></td><td>9.0.4</td><td>Mac OS X, Server, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/procmail/'>procmail</a></td><td><a href='http://www.procmail.org/'>procmail</a></td><td>3.22</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/pyobjc/'>pyobjc</a></td><td><a href='http://pyobjc.sourceforge.net/'>pyobjc</a></td><td>2.3.2a0</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://pyobjc.sourceforge.net/'>pyobjc</a></td><td>trunk-20090623</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/pyOpenSSL/'>pyOpenSSL</a></td><td><a href='https://launchpad.net/pyopenssl/'>pyOpenSSL</a></td><td><a href='http://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.12.tar.gz#md5=60a7bbb6160950823eddcbba2cbcb0d6'>0.12</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/PyRSS2Gen/'>PyRSS2Gen</a></td><td><a href='http://www.dalkescientific.com/Python/PyRSS2Gen.html'>PyRSS2Gen</a></td><td><a href='http://www.dalkescientific.com/Python/PyRSS2Gen-1.0.0.tar.gz'>1.0.0</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/python/'>python</a></td><td><a href='http://www.python.org/'>python</a></td><td><a href='http://www.python.org/ftp/python/2.5.5/Python-2.5.5.tar.bz2'>2.5.5</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://www.python.org/'>python</a></td><td><a href='http://www.python.org/ftp/python/2.6.6/Python-2.6.6.tar.bz2'>2.6.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.python.org/'>python</a></td><td><a href='http://www.python.org/ftp/python/2.7.1/Python-2.7.1.tar.bz2'>2.7.1</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/python_dateutil/'>python_dateutil</a></td><td><a href='http://labix.org/python-dateutil'>python_dateutil</a></td><td><a href='http://labix.org/download/python-dateutil/python-dateutil-1.5.tar.gz'>1.5</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/python_modules/'>python_modules</a></td><td><a href='http://undefined.org/python/#altgraph'>altgraph</a></td><td>0.6.8</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#altgraph'>altgraph</a></td><td>0.7.1</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#bdist_mpkg'>bdist_mpkg</a></td><td><a href='http://pypi.python.org/packages/source/b/bdist_mpkg/bdist_mpkg-0.4.3.tar.gz'>0.4.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#bdist_mpkg'>bdist_mpkg</a></td><td><a href='http://pypi.python.org/packages/source/b/bdist_mpkg/bdist_mpkg-0.4.4.tar.gz#md5=848dfd00fda59092dea4e97f4a711797'>0.4.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www-unix.mcs.anl.gov/fl/research/accessgrid/bonjour-py/bonjour-py.html'>bonjour-py</a></td><td><a href='http://www.mcs.anl.gov/fl/research/accessgrid/bonjour-py/bonjour-py-0.3.tar.gz'>0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#macholib'>macholib</a></td><td>1.2.1.dev-r432</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#macholib'>macholib</a></td><td>1.3.0</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#modulegraph'>modulegraph</a></td><td>0.7.2.dev-r439</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#modulegraph'>modulegraph</a></td><td>0.8.1</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://numpy.scipy.org/'>numpy</a></td><td><a href='http://softlayer.dl.sourceforge.net/project/numpy/NumPy/1.2.1/numpy-1.2.1.tar.gz'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://numpy.scipy.org/'>numpy</a></td><td><a href='http://iweb.dl.sourceforge.net/project/numpy/NumPy/1.5.1/numpy-1.5.1.tar.gz'>1.5.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#py2app'>py2app</a></td><td>0.4.2</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#py2app'>py2app</a></td><td>0.5.2</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://pypi.python.org/pypi/setuptools'>setuptools</a></td><td>0.6c12dev-r8538</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://pypi.python.org/pypi/setuptools'>setuptools</a></td><td><a href='http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c9.tar.gz'>0.6c9</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#xattr'>xattr</a></td><td>0.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://undefined.org/python/#xattr'>xattr</a></td><td>0.6.1</td><td>-</td></tr>
+					<tr><td>Quartz2D</td><td><a href='http://www.remotesensing.org/libtiff/'>LibTIFF</a></td><td><a href='http://dl.maptools.org/dl/libtiff/tiff-3.8.2.tar.gz'>3.8.2</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>QuartzComposer</td><td><a href='http://archive.cnmat.berkeley.edu/OpenSoundControl/'>libOSC</a></td><td><a href='http://archive.cnmat.berkeley.edu/OpenSoundControl/src/libOSC/'>0.3</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/rcs/'>rcs</a></td><td><a href='http://www.gnu.org/software/rcs/'>rcs</a></td><td><a href='http://ftp.gnu.org/pub/gnu/rcs/rcs-5.7.tar.gz'>5.7</a></td><td>Xcode Tools</td></tr>
+					<tr><td>RemoteDesktop</td><td><a href='http://www.opengroup.org/'>keysymdef.h</a></td><td><a href='http://www.opensource.apple.com/source/X11proto/X11proto-15/xproto/xproto-X11R7.2-7.0.10/keysym.h'>1.4</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://gladman.plushost.co.uk/oldsite/cryptography_technology/rijndael/index.php'>Brian Gladman&apos;s Rijndael Implementation</a></td><td>1.0</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://colloquy.info/project/wiki/Source%20Code'>AGRegex</a></td><td>SVN rev 4649</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/vnc-reflector/'>VNC Reflector</a></td><td><a href='http://sourceforge.net/projects/vnc-reflector/files/vnc-reflector/1.2.4/vref_124.zip/download'>1.2.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.jeannot.org/~js/code/index.en.html'>MAPKIT</a></td><td>1.4</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.pcre.org/'>PCRE</a></td><td>6.7</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.ijg.org/'>JPEG Library</a></td><td>6b</td><td>-</td></tr>
+					<tr><td>RemoteDeviceManagement</td><td><a href='https://github.com/fauna/has_many_polymorphs'>has_many_polymorphs</a></td><td>2.13</td><td>Mac OS X, Server</td></tr>
+					<tr><td>" "</td><td><a href='http://www.railslodge.com/plugins/1184-http-accept-language'>HttpAcceptLanguage</a></td><td>1.0.1</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://flori.github.com/json/'>json</a></td><td><a href='http://production.cf.rubygems.org/gems/json-1.5.1.gem'>1.5.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://rubyforge.org/projects/codeforpeople'>macaddr</a></td><td><a href='http://rubyforge.org/frs/download.php/40818/macaddr-1.0.0.tgz'>1.0.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://plist.rubyforge.org/'>Plist</a></td><td>3.1.0</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://rack.rubyforge.org/'>rack</a></td><td><a href='http://chneukirchen.org/releases/rack-1.1.0.tar.gz'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://rubyonrails.org/'>rails</a></td><td>2.3.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.sproutcore.com/'>SproutCore</a></td><td>2.3.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='https://github.com/assaf/uuid/'>uuid</a></td><td><a href='https://github.com/assaf/uuid/blob/master/lib/uuid.rb'>2.3.1</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/removefile/'>removefile</a></td><td><a href='http://sourceforge.net/projects/srm/'>srm</a></td><td><a href='http://prdownloads.sourceforge.net/srm/srm-1.2.8.tar.gz?download'>1.2.8</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/rsync/'>rsync</a></td><td><a href='http://rsync.samba.org/'>rsync</a></td><td>2.6.9</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/ruby/'>ruby</a></td><td><a href='http://www.ruby-lang.org/'>ruby</a></td><td><a href='ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p249.tar.gz'>1.8.7-p249</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/RubyCocoa/'>RubyCocoa</a></td><td><a href='http://rubycocoa.sourceforge.net'>RubyCocoa</a></td><td><a href='https://rubycocoa.svn.sourceforge.net/svnroot/rubycocoa/trunk/src'>trunk</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/RubyGems/'>RubyGems</a></td><td><a href='http://rubyforge.org/projects/rubygems'>RubyGems</a></td><td><a href='http://rubyforge.org/frs/download.php/69365/rubygems-1.3.6.tgz'>1.3.6</a></td><td>Mac OS X</td></tr>
+					<tr><td>Sandbox</td><td><a href='http://tinyscheme.sourceforge.net/'>TinyScheme</a></td><td><a href='http://sourceforge.net/projects/tinyscheme/files/tinyscheme/Tinyscheme%20version%201.38/tinyscheme1.38.zip/download'>1.38</a></td><td>Mac OS X</td></tr>
+					<tr><td>SceneKit</td><td><a href='http://sourceforge.net/projects/collada-dom/'>colladaDOM</a></td><td><a href='http://sourceforge.net/projects/collada-dom/files/Collada%20DOM/Collada%20DOM%202.2/Collada%20DOM%202.2.zip/download'>2.2</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/pcre'>PCRECPP</a></td><td><a href='http://sourceforge.net/projects/pcre/files/pcre/8.00/pcre-8.00.zip/download'>8.0</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/screen/'>screen</a></td><td><a href='http://www.gnu.org/software/screen/'>screen</a></td><td><a href='ftp://ftp.uni-erlangen.de/pub/utilities/screen/screen-4.0.3.tar.gz'>4.0.3</a></td><td>Mac OS X</td></tr>
+					<tr><td>ScreenSharing</td><td><a href='http://www.opengroup.org/'>keysymdef.h</a></td><td><a href='http://www.opensource.apple.com/source/X11proto/X11proto-15/xproto/xproto-X11R7.2-7.0.10/keysym.h'>1.4</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://gladman.plushost.co.uk/oldsite/cryptography_technology/rijndael/index.php'>Brian Gladman&apos;s Rijndael Implementation</a></td><td>1.0</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/vnc-reflector/'>VNC Reflector</a></td><td><a href='http://sourceforge.net/projects/vnc-reflector/files/vnc-reflector/1.2.4/vref_124.zip/download'>1.2.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.ijg.org/'>JPEG Library</a></td><td>6b</td><td>-</td></tr>
+					<tr><td>ServerEventMonitor</td><td><a href='http://quigon.bsws.de/femail/'>femail</a></td><td><a href='http://quigon.bsws.de/femail/femail-0.97.tgz'>0.97</a></td><td>Mac OS X</td></tr>
+					<tr><td>SmartcardCCID</td><td><a href='http://alioth.debian.org/frs/?group_id=30105&amp;amp;release_id=1192'>ccid</a></td><td><a href='http://alioth.debian.org/frs/download.php/3080/ccid-1.3.11.tar.bz2'>1.3.11</a></td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.ellert.se/twain-sane/'>libusb</a></td><td><a href='http://www.ellert.se/PKGS/libusb-2008-02-02/src/libusb-2008-02-02-svn-macosx.tar.gz'>0.1.13b</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/smb/'>smb</a></td><td><a href='http://www.freebsd.org'>smbfs</a></td><td>1.3.6</td><td>Mac OS X</td></tr>
+					<tr><td>SpamAssassin</td><td><a href='http://spamassassin.apache.org/index.html'>SpamAssassin</a></td><td><a href='http://svn.apache.org/repos/asf/spamassassin/branches/3.3'>3.3.2-r929478</a></td><td>Server, Xcode Tools</td></tr>
+					<tr><td>Spotlight</td><td>SQLite</td><td>3.1.3</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>SQLite</td><td><a href='http://www.sqlite.org'>SQLite</a></td><td><a href='http://www.sqlite.org/src/zip/SQLite-5c0afe70a5.zip?uuid=5c0afe70a5ee2b378896bf30426823dc5ae4e95c'>3.6.22</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/srm/'>srm</a></td><td><a href='http://sourceforge.net/projects/srm/'>srm</a></td><td><a href='http://prdownloads.sourceforge.net/srm/srm-1.2.8.tar.gz?download'>1.2.8</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/subversion/'>subversion</a></td><td><a href='http://subversion.apache.org/'>subversion</a></td><td><a href='http://subversion.tigris.org/downloads/subversion-1.6.16.tar.bz2'>1.6.16</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/sudo/'>sudo</a></td><td><a href='http://www.sudo.ws/'>sudo</a></td><td><a href='http://www.sudo.ws/sudo/dist/sudo-1.7.4p6.tar.gz'>1.7.4p6</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/tcl/'>tcl</a></td><td><a href='http://tcl.tk/'>tcl</a></td><td><a href='http://osdn.dl.sourceforge.net/project/tcl/Tcl/8.5.9/tcl8.5.9-src.tar.gz'>8.5.9</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>" "</td><td><a href='http://tcl.tk/'>tk</a></td><td><a href='http://cloud.github.com/downloads/das/tcltk/tk8.5.9-decarbon.tar.gz'>8.5.9</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tcl.tk/'>tcl84</a></td><td><a href='http://osdn.dl.sourceforge.net/project/tcl/Tcl/8.4.19/tcl8.4.19-src.tar.gz'>8.4.19</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tcl.tk/'>tk84</a></td><td>8.4.19</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/tcllib'>bwidget</a></td><td><a href='http://teapot.activestate.com/package/name/Bwidget/ver/0.0.0.2010.08.18.08.49.54/arch/source/file.zip'>1.9.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://expect.nist.gov/'>expect</a></td><td>5.45</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.elf.org/ffidl/'>ffidl</a></td><td><a href='http://www.categorifiedcoder.info/tcltk/ffidl/ffidl-0.6.1-darwin-9-univ.tar.gz'>0.6.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://incrtcl.sourceforge.net/'>incrtcl</a></td><td>3.4</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://incrtcl.sourceforge.net/'>iwidgets</a></td><td><a href='http://teapot.activestate.com/package/name/Iwidgets/ver/0.0.0.2008.08.22.18.15.00/arch/source/file.zip'>4.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://memchan.sourceforge.net/'>memchan</a></td><td><a href='http://teapot.activestate.com/package/name/Memchan/ver/2.2.1.2009.05.20.12.31.28/arch/source/file.zip'>2.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.equi4.com/metakit/'>mk4tcl</a></td><td>2.4.9.7</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclpro.sourceforge.net/'>tbcload</a></td><td><a href='http://www.categorifiedcoder.info/tcltk/tbcload-1.7.tar.gz'>1.7</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tcl.tk/software/tcllib/'>tcllib</a></td><td>1.12</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclsoap.sourceforge.net/'>tclsoap</a></td><td><a href='http://teapot.activestate.com/package/name/tclsoap/ver/0.0.0.2009.05.20.12.37.51/arch/source/file.zip'>1.6.8.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/tclvfs'>tclvfs</a></td><td><a href='http://teapot.activestate.com/package/name/vfs/ver/0.0.0.2010.08.18.09.08.49/arch/source/file.zip'>1.4.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclx.sourceforge.net/'>tclx</a></td><td><a href='http://teapot.activestate.com/package/name/Tclx/ver/0.0.0.2010.08.18.09.12.06/arch/source/file.zip'>8.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclxml.sourceforge.net/'>tclxml</a></td><td>2.6</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclxml.sourceforge.net/'>tcldom</a></td><td>2.6</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclxml.sourceforge.net/'>tclxslt</a></td><td>2.6</td><td>-</td></tr>
+					<tr><td>" "</td><td>tdom</td><td><a href='http://teapot.activestate.com/package/name/tdom/ver/0.0.0.2008.08.27.18.17.27/arch/source/file.zip'>0.8.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tcl.sourceforge.net/'>thread</a></td><td><a href='http://teapot.activestate.com/package/name/thread/ver/0.0.0.2010.08.18.09.07.53/arch/source/file.zip'>2.6.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tkcon.sourceforge.net/'>tkcon</a></td><td><a href='http://teapot.activestate.com/package/name/tkcon/ver/0.0.0.2010.08.18.09.08.05/arch/source/file.zip'>2.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tkimg.sourceforge.net/'>tkimg</a></td><td>1.4</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sourceforge.net/projects/tcllib'>tklib</a></td><td>0.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tktable.sourceforge.net/'>tktable</a></td><td><a href='http://teapot.activestate.com/package/name/Tktable/ver/0.0.0.2010.08.18.09.02.05/arch/source/file.zip'>2.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tktreectrl.sourceforge.net/'>tktreectrl</a></td><td><a href='http://osdn.dl.sourceforge.net/project/tktreectrl/tktreectrl/tktreectrl-2.2.10/tktreectrl-2.2.10.tar.gz'>2.2.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tls.sourceforge.net/'>tls</a></td><td><a href='http://teapot.activestate.com/package/name/tls/ver/0.0.0.2010.08.18.09.08.25/arch/source/file.zip'>1.6.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tcltrf.sourceforge.net/'>trf</a></td><td><a href='http://teapot.activestate.com/package/name/Trf/ver/2.1.4.2009.05.20.12.34.07/arch/source/file.zip'>2.1.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.xotcl.org/'>xotcl</a></td><td><a href='http://media.wu-wien.ac.at/download/xotcl-1.6.6.tar.gz'>1.6.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://quicktimetcl.sourceforge.net/'>quicktimetcl</a></td><td><a href='http://teapot.activestate.com/package/name/QuickTimeTcl/ver/0.0.0.2008.05.06.23.05.17/arch/source/file.zip'>3.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.speech.kth.se/snack/'>snack</a></td><td><a href='http://www.speech.kth.se/snack/dist/snack2.2.10.tar.gz'>2.2.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclresource.sourceforge.net/'>tclresource</a></td><td><a href='http://teapot.activestate.com/package/name/resource-source/ver/0.0.0.2007.11.22.23.13.59/arch/source/file.zip'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclae.sourceforge.net/'>tclae</a></td><td>2.0.5</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://tclapplescript.sourceforge.net/'>tclapplescript</a></td><td><a href='http://teapot.activestate.com/package/name/Tclapplescript/ver/0.0.0.2007.11.22.23.07.37/arch/source/file.zip'>1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.equi4.com/starkit/sdx.html'>sdx</a></td><td>2.0</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/tcp_wrappers/'>tcp_wrappers</a></td><td><a href='ftp://ftp.porcupine.org/pub/security/index.html'>tcp_wrappers</a></td><td><a href='ftp://ftp.porcupine.org/pub/security/tcp_wrappers_7.6-ipv6.4.tar.gz'>7.6-ipv6.4</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/tcpdump/'>tcpdump</a></td><td><a href='http://www.tcpdump.org/'>tcpdump</a></td><td><a href='http://www.tcpdump.org/release/tcpdump-4.0.0.tar.gz'>4.0.0</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/tcsh/'>tcsh</a></td><td><a href='http://www.tcsh.org'>tcsh</a></td><td><a href='ftp://ftp.astron.com/pub/tcsh/tcsh-6.17.00.tar.gz'>6.15.00</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/texi2html/'>texi2html</a></td><td><a href='https://texi2html.cvshome.org/'>texi2html</a></td><td>1.70</td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/texinfo/'>texinfo</a></td><td><a href='http://www.gnu.org/software/texinfo/'>texinfo</a></td><td><a href='http://ftp.gnu.org/pub/gnu/texinfo/texinfo-4.8.tar.bz2'>4.8</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/text_cmds/'>text_cmds</a></td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/banner/'>banner</a></td><td>2005-09-16</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/bin/cat/'>cat</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/cksum/'>cksum</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/col/'>col</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/colrm/'>colrm</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/column/'>column</a></td><td>2006-09-19</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/comm/'>comm</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/csplit/'>csplit</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/cut/'>cut</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/bin/ed/'>ed</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/expand/'>expand</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/fmt/'>fmt</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/fold/'>fold</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/head/'>head</a></td><td>2007-01-11</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/join/'>join</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/lam/'>lam</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/look/'>look</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/sbin/md5/'>md5</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/nl/'>nl</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/paste/'>paste</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/pr/'>pr</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/rev/'>rev</a></td><td>2009-12-13</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/rs/'>rs</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/sed/'>sed</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.gnu.org/software/coreutils/'>coreutils/sort</a></td><td>coreutils-5.93</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/split/'>split</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/tail/'>tail</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/tr/'>tr</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/ul/'>ul</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/unexpand/'>unexpand</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/uniq/'>uniq</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/unvis/'>unvis</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/vis/'>vis</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freebsd.org/cgi/cvsweb.cgi/src/usr.bin/wc/'>wc</a></td><td>2005-09-16</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/tidy/'>tidy</a></td><td><a href='http://tidy.sourceforge.net/'>tidy</a></td><td><a href='http://tidy.sourceforge.net/src/tidy_src.tgz'>2006.11.1</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>Tier3Fonts</td><td><a href='http://www.paratype.com/public/'>PTSans</a></td><td><a href='http://www.fontstock.com/public/PTSans.zip'>2.003</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/Twisted/'>Twisted</a></td><td><a href='http://twistedmatrix.com/'>Twisted</a></td><td><a href='http://pypi.python.org/packages/source/T/Twisted/Twisted-11.0.0.tar.bz2'>11.0.0</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/uucp/'>uucp</a></td><td><a href='http://directory.fsf.org/uucp.html'>uucp</a></td><td><a href='http://ftp.gnu.org/pub/gnu/uucp/uucp-1.07.tar.gz'>1.07</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/vim/'>vim</a></td><td><a href='http://www.vim.org/'>vim</a></td><td><a href='ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2'>7.3</a></td><td>Mac OS X</td></tr>
+					<tr><td>WebmailServer</td><td><a href='http://roundcube.net/'>roundcubemail</a></td><td><a href='http://cdnetworks-us-1.dl.sourceforge.net/project/roundcubemail/roundcubemail/0.5.2/roundcubemail-0.5.2.tar.gz'>0.5.2</a></td><td>Server</td></tr>
+					<tr><td>X11_quartz_wm</td><td><a href='http://xquartz.macosforge.org'>quartz-wm</a></td><td><a href='http://xquartz.macosforge.org/downloads/src/quartz-wm-1.1.0.tar.bz2'>1.1.0</a></td><td>X11</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11apps/'>X11apps</a></td><td><a href='http://www.x.org'>appres</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/appres-1.0.3.tar.bz2'>1.0.3</a></td><td>X11</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>bdftopcf</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/bdftopcf-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>bitmap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/bitmap-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>editres</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/editres-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fonttosfnt</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/fonttosfnt-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fslsfonts</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/fslsfonts-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fstobdf</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/fstobdf-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>iceauth</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/iceauth-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>ico</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/ico-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>listres</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/listres-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>luit</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/luit-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>mesa-demos</a></td><td><a href='ftp://ftp.freedesktop.org/pub/mesa/demos/8.0.1/mesa-demos-8.0.1.tar.bz2'>8.0.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>mkfontdir</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/mkfontdir-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>mkfontscale</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/mkfontscale-1.0.8.tar.bz2'>1.0.8</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>oclock</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/oclock-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>rgb</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/rgb-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>sessreg</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/sessreg-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>showfont</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/showfont-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>setxkbmap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/setxkbmap-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>smproxy</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/smproxy-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>twm</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/twm-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>viewres</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/viewres-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>x11perf</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/x11perf-1.5.3.tar.bz2'>1.5.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xauth</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xauth-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xbacklight</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xbacklight-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xbitmaps</a></td><td><a href='http://xorg.freedesktop.org/releases/individual/data/xbitmaps-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xcalc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xcalc-1.0.4.1.tar.bz2'>1.0.4.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xclipboard</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xclipboard-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xclock</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xclock-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xcmsdb</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xcmsdb-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xconsole</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xconsole-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xcursorgen</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xcursorgen-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xditview</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xditview-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xdm</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xdm-1.1.10.tar.bz2'>1.1.10</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xdpyinfo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xdpyinfo-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xedit</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xedit-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xev</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xev-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xeyes</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xeyes-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xfd</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xfd-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xfontsel</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xfontsel-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xfs</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xfs-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xfsinfo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xfsinfo-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xgamma</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xgamma-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xgc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xgc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xhost</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xhost-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xinput</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xinput-1.5.3.tar.bz2'>1.5.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkbcomp</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xkbcomp-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkeyboard-config</a></td><td><a href='http://people.freedesktop.org/~svu/xkeyboard-config-2.0.tar.bz2'>2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkbevd</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xkbevd-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkbprint</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xkbprint-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkbutils</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xkbutils-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xkill</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xkill-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xload</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xload-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xlogo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xlogo-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xlsatoms</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xlsatoms-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xlsclients</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xlsclients-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xlsfonts</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xlsfonts-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xmag</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xmag-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xman</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xman-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xmessage</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xmessage-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xmh</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xmh-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xmodmap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xmodmap-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xmore</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xmore-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xpr</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xpr-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xprop</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xprop-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xrandr</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xrandr-1.3.4.tar.bz2'>1.3.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xrdb</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xrdb-1.0.9.tar.bz2'>1.0.9</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xrefresh</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xrefresh-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xscope</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xscope-1.3.tar.bz2'>1.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xset</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xset-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xsetmode</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xsetmode-1.0.0.tar.bz2'>1.0.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xsetpointer</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xsetpointer-1.0.1.tar.bz2'>1.0.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xsetroot</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xsetroot-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xsm</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xsm-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xstdcmap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xstdcmap-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://invisible-island.net/xterm'>xterm</a></td><td><a href='ftp://invisible-island.net/xterm/xterm-269.tgz'>269</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xtrap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xtrap-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xvinfo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xvinfo-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xwd</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xwd-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xwininfo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xwininfo-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xwud</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xwud-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11fonts/'>X11fonts</a></td><td><a href='http://www.x.org'>encodings</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/encodings-1.0.4.tar.bz2'>1.0.4</a></td><td>X11</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-adobe-100dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-adobe-100dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-adobe-75dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-adobe-75dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-adobe-utopia-100dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-adobe-utopia-100dpi-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-adobe-utopia-75dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-adobe-utopia-75dpi-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-adobe-utopia-type1</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-adobe-utopia-type1-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-alias</a></td><td>1.0.4</td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-arabic-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-arabic-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-100dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-100dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-75dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-75dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-lucidatypewriter-100dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-lucidatypewriter-100dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-lucidatypewriter-75dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-lucidatypewriter-75dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-ttf</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-ttf-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bh-type1</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bh-type1-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bitstream-100dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bitstream-100dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bitstream-75dpi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bitstream-75dpi-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bitstream-speedo</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bitstream-speedo-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-bitstream-type1</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-bitstream-type1-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-cronyx-cyrillic</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-cronyx-cyrillic-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-cursor-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-cursor-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-daewoo-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-daewoo-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-dec-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-dec-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-ibm-type1</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-ibm-type1-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-isas-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-isas-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-jis-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-jis-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-micro-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-micro-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-misc-cyrillic</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-misc-cyrillic-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-misc-ethiopic</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-misc-ethiopic-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-misc-meltho</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-misc-meltho-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-misc-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-misc-misc-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-mutt-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-mutt-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-schumacher-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-schumacher-misc-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-screen-cyrillic</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-screen-cyrillic-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-sony-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-sony-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-sun-misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-sun-misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-winitzki-cyrillic</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-winitzki-cyrillic-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-xfree86-type1</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-xfree86-type1-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.gnome.org/fonts'>ttf-bitstream-vera</a></td><td><a href='http://ftp.gnome.org/pub/GNOME/sources/ttf-bitstream-vera/1.10//ttf-bitstream-vera-1.10.tar.bz2'>1.10</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11libs/'>X11libs</a></td><td><a href='http://www.cairographics.org'>cairo</a></td><td><a href='http://cairographics.org/releases/cairo-1.10.2.tar.gz'>1.10.2</a></td><td>X11</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libAppleWM</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libAppleWM-1.4.1.tar.bz2'>1.4.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libdmx</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libdmx-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libfontenc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libfontenc-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libFS</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libFS-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libICE</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libICE-1.0.7.tar.bz2'>1.0.7</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.libpng.org'>libpng</a></td><td><a href='http://downloads.sourceforge.net/libpng/libpng-1.5.1.tar.bz2'>1.5.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.libpng.org'>libpng</a></td><td><a href='http://downloads.sourceforge.net/libpng/libpng-1.4.5.tar.bz2'>1.4.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.libpng.org'>libpng</a></td><td><a href='http://downloads.sourceforge.net/libpng/libpng-1.2.44.tar.bz2'>1.2.44</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libSM</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libSM-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libX11</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libX11-1.4.3.tar.bz2'>1.4.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXau</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXau-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXaw</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXaw-1.0.9.tar.bz2'>1.0.9</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXaw</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXaw-1.0.4.tar.bz2'>1.0.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXcomposite</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXcomposite-0.4.3.tar.bz2'>0.4.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXcursor</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXcursor-1.1.11.tar.bz2'>1.1.11</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXdamage</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXdamage-1.1.3.tar.bz2'>1.1.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXdmcp</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXdmcp-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXevie</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXevie-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXext</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXext-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXfixes</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXfixes-5.0.tar.bz2'>5.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXfont</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXfont-1.4.3.tar.bz2'>1.4.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXfontcache</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXfontcache-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXft</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXft-2.2.0.tar.bz2'>2.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXi</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXi-1.4.2.tar.bz2'>1.4.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXinerama</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXinerama-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://xcb.freedesktop.org'>libxcb</a></td><td><a href='http://xcb.freedesktop.org/dist/libxcb-1.7.tar.bz2'>1.7</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libxkbfile</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libxkbfile-1.0.7.tar.bz2'>1.0.7</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libxkbui</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libxkbui-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXmu</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXmu-1.1.0.tar.bz2'>1.1.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXp</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXp-1.0.1.tar.bz2'>1.0.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXpm</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXpm-3.5.9.tar.bz2'>3.5.9</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXrandr</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXrandr-1.3.1.tar.bz2'>1.3.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXrender</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXrender-0.9.6.tar.bz2'>0.9.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXres</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXres-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXScrnSaver</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXScrnSaver-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXt</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXt-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXTrap</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXTrap-1.0.0.tar.bz2'>1.0.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXtst</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXtst-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXv</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXv-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXvMC</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXvMC-1.0.6.tar.bz2'>1.0.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXxf86dga</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXxf86dga-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXxf86misc</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXxf86misc-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>libXxf86vm</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/libXxf86vm-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.mesa3d.org'>MesaGLUT</a></td><td><a href='ftp://ftp.freedesktop.org/pub/mesa/7.8.2/MesaGLUT-7.8.2.tar.bz2'>7.8.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.mesa3d.org'>MesaLib</a></td><td><a href='ftp://ftp.freedesktop.org/pub/mesa/7.8.2/MesaLib-7.8.2.tar.bz2'>7.8.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.cairographics.org'>pixman</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/pixman-0.20.2.tar.bz2'>0.20.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://xcb.freedesktop.org'>xcb-util</a></td><td><a href='http://xcb.freedesktop.org/dist/xcb-util-0.3.6.tar.bz2'>0.3.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://xcb.freedesktop.org'>xpyb</a></td><td><a href='http://xcb.freedesktop.org/dist/xpyb-1.2.tar.bz2'>1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xtrans</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/lib/xtrans-1.2.6.tar.bz2'>1.2.6</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11misc/'>X11misc</a></td><td><a href='http://www.x.org'>gccmakedep</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/util/gccmakedep-1.0.2.tar.bz2'>1.0.2</a></td><td>X11</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>font-util</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/font/font-util-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>lndir</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/util/lndir-1.0.2.tar.bz2'>1.0.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>makedepend</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/util/makedepend-1.0.3.tar.bz2'>1.0.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://pkg-config.freedesktop.org'>pkg-config</a></td><td><a href='http://pkgconfig.freedesktop.org/releases/pkg-config-0.25.tar.gz'>0.25</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>util-macros</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/util/util-macros-1.13.0.tar.bz2'>1.13.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xorg-sgml-doctools</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/doc/xorg-sgml-doctools-1.7.tar.bz2'>1.7</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11proto/'>X11proto</a></td><td><a href='http://xcb.freedesktop.org'>xcb-proto</a></td><td><a href='http://xcb.freedesktop.org/dist/xcb-proto-1.6.tar.bz2'>1.6</a></td><td>Mac OS X, X11</td></tr>
+					<tr><td>" "</td><td><a href='http://www.fontconfig.org'>fontconfig</a></td><td><a href='http://www.fontconfig.org/release/fontconfig-2.8.0.tar.gz'>2.8.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.freetype.org'>freetype</a></td><td><a href='http://download.savannah.gnu.org/releases/freetype/freetype-2.4.4.tar.bz2'>2.4.4</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>applewmproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/applewmproto-1.4.2.tar.bz2'>1.4.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>bigreqsproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/bigreqsproto-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>compositeproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/compositeproto-0.4.2.tar.bz2'>0.4.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>damageproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/damageproto-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>dmxproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/dmxproto-2.3.1.tar.bz2'>2.3.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>dri2proto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/dri2proto-2.3.tar.bz2'>2.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>evieext</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/evieext-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fixesproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/fixesproto-5.0.tar.bz2'>5.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fontcacheproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/fontcacheproto-0.1.3.tar.bz2'>0.1.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>fontsproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/fontsproto-2.1.1.tar.bz2'>2.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>glproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/glproto-1.4.12.tar.bz2'>1.4.12</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>inputproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/inputproto-2.0.1.tar.bz2'>2.0.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>kbproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/kbproto-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>printproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/printproto-1.0.5.tar.bz2'>1.0.5</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>randrproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/randrproto-1.3.2.tar.bz2'>1.3.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>recordproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/recordproto-1.14.1.tar.bz2'>1.14.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>renderproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/renderproto-0.11.1.tar.bz2'>0.11.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>resourceproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/resourceproto-1.1.1.tar.bz2'>1.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>scrnsaverproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/scrnsaverproto-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>trapproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/trapproto-3.4.3.tar.bz2'>3.4.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>videoproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/videoproto-2.3.1.tar.bz2'>2.3.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xcmiscproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xcmiscproto-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xextproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xextproto-7.2.0.tar.bz2'>7.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86bigfontproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86bigfontproto-1.2.0.tar.bz2'>1.2.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86dgaproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86dgaproto-2.1.tar.bz2'>2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86driproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86driproto-2.1.1.tar.bz2'>2.1.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86miscproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86miscproto-0.9.3.tar.bz2'>0.9.3</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86rushproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86rushproto-1.1.2.tar.bz2'>1.1.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xf86vidmodeproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xf86vidmodeproto-2.3.1.tar.bz2'>2.3.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xineramaproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xineramaproto-1.2.1.tar.bz2'>1.2.1</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xorg-docs</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/doc/xorg-docs-1.6.tar.bz2'>1.6</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xproto</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/proto/xproto-7.0.21.tar.bz2'>7.0.21</a></td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/X11server/'>X11server</a></td><td><a href='http://www.x.org'>xorg-server</a></td><td><a href='http://xquartz.macosforge.org/downloads/src/xorg-server-1.6.5-apple3.tar.bz2'>1.6.5-apple3</a></td><td>Mac OS X, X11</td></tr>
+					<tr><td>" "</td><td><a href='http://xquartz.macosforge.org'>xorg-server</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/xserver/xorg-server-1.10.2.tar.bz2'>1.10.2</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://www.x.org'>xinit</a></td><td><a href='http://xorg.freedesktop.org/archive/individual/app/xinit-1.3.0.tar.bz2'>1.3.0</a></td><td>-</td></tr>
+					<tr><td>" "</td><td><a href='http://sparkle.andymatuschak.org'>Sparkle</a></td><td>2768e60ce1fe19f2b263cce0ed62147863a1a3d2</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/xar/'>xar</a></td><td>xar</td><td>1.4</td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/zip/'>zip</a></td><td><a href='http://www.info-zip.org/pub/infozip/Zip.html'>zip</a></td><td>3.0</td><td>Mac OS X</td></tr>
+					<tr><td>" "</td><td><a href='http://www.info-zip.org/UnZip.html'>unzip</a></td><td>5.52</td><td>-</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/zlib/'>zlib</a></td><td><a href='http://www.zlib.net/'>zlib</a></td><td><a href='http://zlib.net/zlib-1.2.5.tar.bz2'>1.2.5</a></td><td>Mac OS X, Xcode Tools</td></tr>
+					<tr><td>ZopeInterface</td><td><a href='http://www.zope.org/'>Zope</a></td><td><a href='http://pypi.python.org/packages/source/z/zope.interface/zope.interface-3.5.1.tar.gz'>3.5.1</a></td><td>Mac OS X</td></tr>
+					<tr><td><a href='http://www.opensource.apple.com/source/zsh/'>zsh</a></td><td><a href='http://www.zsh.org/'>zsh</a></td><td>4.3.11</td><td>Mac OS X</td></tr>
+				</table><!--/proj-->
+			</section>
+
+		</div><!--/content-->
+	</div><!--/main-->
+	<footer id="globalfooter">
+		<div id="breadory">
+			<ol id="breadcrumbs">
+				<li class="home"><a href="/">Home</a></li>
+				<li>Open Source</li>
+			</ol>
+			<!--googleoff: all-->
+<div id="directorynav" class="mac directorynav">
+	<div id="dn-cola" class="column large-3 small-12">
+		
+		<h3>Mac</h3>
+		
+		<ul>
+			<li><a href="/macbook-air/">MacBook Air</a></li>
+			<li><a href="/macbook-pro/">MacBook Pro</a></li>
+			<li><a href="/mac-mini/">Mac mini</a></li>
+			<li><a href="/imac/">iMac</a></li>
+			<li><a href="/imac-with-retina/">iMac with Retina 5K display</a></li>
+			<li><a href="/mac-pro/">Mac Pro</a></li>
+			<li><a href="/mac/compare/">Compare all Mac models</a></li>
+		</ul>
+	</div>
+	<div id="dn-colb" class="column large-3 small-12">
+		<div class="directorynav-subcol">
+			
+			<h3>Accessories</h3>
+			
+			<ul>
+				<li><a href="/magicmouse/">Magic Mouse</a></li>
+				<li><a href="/magictrackpad/">Magic Trackpad</a></li>
+				<li><a href="/keyboard/">Apple Wireless Keyboard</a></li>
+				<li><a href="/displays/">Thunderbolt Display</a></li>
+				<li><a href="/airport-express/">AirPort Express</a></li>
+				<li><a href="/airport-extreme/">AirPort Extreme</a></li>
+				<li><a href="/airport-time-capsule/">AirPort Time Capsule</a></li>
+			</ul>
+		</div>
+		<div class="directorynav-subcol">
+			
+			<h3>OS X</h3>
+			
+			<ul>
+				<li><a href="/osx/">OS X Yosemite</a></li>
+				<li><a href="/osx/server/">OS X Server</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="dn-colc" class="column large-3 small-12">
+		
+		<h3>Applications</h3>
+		
+		<ul>
+			<li><a href="/mac/iphoto/">iPhoto</a></li>
+			<li><a href="/mac/imovie/">iMovie</a></li>
+			<li><a href="/mac/garageband/">GarageBand</a></li>
+			<li><a href="/mac/pages/">Pages</a></li>
+			<li><a href="/mac/numbers/">Numbers</a></li>
+			<li><a href="/mac/keynote/">Keynote</a></li>
+			<li><a href="/aperture/">Aperture</a></li>
+			<li><a href="/final-cut-pro/">Final Cut Pro X</a></li>
+			<li><a href="/final-cut-pro/motion/">Motion</a></li>
+			<li><a href="/final-cut-pro/compressor/">Compressor</a></li>
+			<li><a href="/logic-pro/">Logic Pro X</a></li>
+			<li><a href="/mainstage/">MainStage</a></li>
+			<li><a href="/ibooks-author/">iBooks Author</a></li>
+			<li><a href="/remotedesktop/">Remote Desktop</a></li>
+			<li><a href="/safari/">Safari</a></li>
+			<li><a href="/quicktime/">QuickTime</a></li>
+			<li><a href="/osx/apps/#maps">Maps</a></li>
+		</ul>
+	</div>
+	<div id="dn-cold" class="column large-3 small-12">
+		<div class="directorynav-subcol">
+			
+			<h3>Markets</h3>
+			
+			<ul>
+				<li><a href="/business/mac/">Business</a></li>
+				<li><a href="/pro/">Creative Pro</a></li>
+				<li><a href="/education/">Education</a></li>
+			</ul>
+		</div>
+		<div class="directorynav-subcol">
+			
+			<h3>Support</h3>
+			
+			<ul>
+				<li><a href="/support/products/">AppleCare</a></li>
+				<li><a href="/support/">Online Support</a></li>
+				<li><a href="http://store.apple.com/us/help/contact">Telephone Sales</a></li>
+				<li><a href="/retail/geniusbar/">Genius Bar</a></li>
+				<li><a href="/retail/learn/">Workshops</a></li>
+				<li><a href="/retail/learn/one-to-one/">One to One</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="capbottom"></div>
+</div>
+<!--googleon: all-->
+
+		</div><!--/breadory-->
+		<p class="gf-buy footer-shop"><span>Shop the <a href="http://store.apple.com/us">Apple Online Store</a> (1-800-MY-APPLE),</span> visit an <a href="/retail/">Apple Retail Store</a>, or find a <a href="/buy/">reseller</a>.</p>
+
+<ul class="gf-links piped footer-links">
+	<li><a href="/about/" class="first">Apple Info</a></li>
+	<li><a href="/sitemap/">Site Map</a></li>
+	<li><a href="/hotnews/">Hot News</a></li>
+	<li><a href="/rss/">RSS Feeds</a></li>
+	
+	<li><a href="/contact/" class="contact_us">Contact Us</a></li>
+	<li><a href="/choose-your-country/" class="choose">
+		
+			<img src="http://images.apple.com/global/elements/flags/22x22/usa.png" alt="Choose your country or region" width="22" height="22" data-hires="true" />
+		
+	</a></li>
+</ul>
+
+<div class="gf-sosumi footer-sosumi">
+	<p>Copyright © 2014 Apple Inc. All rights reserved.</p>
+	<ul class="piped">
+		<li><a href="/legal/internet-services/terms/site.html" class="first">Terms of Use</a></li>
+		<li><a href="/privacy/privacy-policy/">Updated Privacy Policy</a></li>
+	</ul>
+</div>
+
+	</footer><!--/globalfooter-->
+</body>
+</html>

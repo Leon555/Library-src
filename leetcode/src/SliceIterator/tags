@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CExampleTest	./CExampleTest.cpp	/^CPPUNIT_TEST_SUITE_REGISTRATION( CExampleTest );$/;"	v
+CExampleTest	./CExampleTest.h	/^class CExampleTest : public CPPUNIT_NS::TestFixture$/;"	c
+CXX	./Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	./Makefile	/^CXXFLAGS = -g $(INCLUDES)$/;"	m
+CoordSlice	./SliceIterator.h	/^}CoordSlice;$/;"	t	typeref:struct:__anon1
+CopySlice	./SliceIterator.cpp	/^int CopySlice(const SliceDesc* slice_desc,int** first_element_of_slice_array, unsigned long* slice_element_num)$/;"	f
+DirectoryOfThisScript	./ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f
+FlagsForFile	./ycm_extra_conf.py	/^def FlagsForFile( filename ):$/;"	f
+INCLUDES	./Makefile	/^INCLUDES= -I\/opt\/local\/include$/;"	m
+LINKFLAGS	./Makefile	/^LINKFLAGS= -lcppunit$/;"	m
+MAIN	./Makefile	/^MAIN= .\/main.cpp$/;"	m
+MAX_COORD_NUM	./SliceIterator.h	/^#define MAX_COORD_NUM /;"	d
+MakeRelativePathsInFlagsAbsolute	./ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f
+OBJS	./Makefile	/^OBJS = SliceIterator.o CExampleTest.o$/;"	m
+SLICE_ITERATOR_H	./SliceIterator.h	/^#define SLICE_ITERATOR_H$/;"	d
+SliceDesc	./SliceIterator.h	/^}SliceDesc;$/;"	t	typeref:struct:__anon2
+SliceIterator	./SliceIterator.h	/^}SliceIterator;$/;"	t	typeref:struct:__anon3
+SliceIteratorEnd	./SliceIterator.cpp	/^int SliceIteratorEnd(const SliceIterator* slice_iterator)$/;"	f
+SliceIteratorGetCurr	./SliceIterator.cpp	/^int* SliceIteratorGetCurr(const SliceIterator* slice_iterator)$/;"	f
+SliceIteratorInit	./SliceIterator.cpp	/^int SliceIteratorInit (const SliceDesc* slice_desc, SliceIterator* slice_iterator)$/;"	f
+SliceIteratorNext	./SliceIterator.cpp	/^void SliceIteratorNext(SliceIterator* slice_iterator)$/;"	f
+TestCase01	./CExampleTest.cpp	/^void CExampleTest::TestCase01()$/;"	f	class:CExampleTest
+TestCase02	./CExampleTest.cpp	/^void CExampleTest::TestCase02()$/;"	f	class:CExampleTest
+_CEXAMPLE_TEST_H	./CExampleTest.h	/^#define _CEXAMPLE_TEST_H$/;"	d
+compilation_database_folder	./ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+coord_cur	./SliceIterator.h	/^	unsigned long coord_cur[MAX_COORD_NUM]; \/\/ 当前元素的位置$/;"	m	struct:__anon3
+coord_num	./SliceIterator.h	/^    unsigned long coord_num; \/\/维度个数，最大取值为MAX_COORD_NUM，值为10$/;"	m	struct:__anon2
+coord_slice	./SliceIterator.h	/^	CoordSlice coord_slice[MAX_COORD_NUM];\/\/切片在每个维度上的起止下标$/;"	m	struct:__anon2
+coord_spec	./SliceIterator.h	/^	unsigned long coord_spec[MAX_COORD_NUM];\/\/原始数组每个维度下标的最大取值$/;"	m	struct:__anon2
+database	./ycm_extra_conf.py	/^  database = None$/;"	v
+database	./ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+end	./SliceIterator.h	/^	unsigned long end; \/\/结束下标$/;"	m	struct:__anon1
+first_element_of_orignal_array	./SliceIterator.h	/^    int* first_element_of_orignal_array;\/\/原始数组的第一个元素指针$/;"	m	struct:__anon2
+flags	./ycm_extra_conf.py	/^flags = [$/;"	v
+getOffset	./SliceIterator.cpp	/^int getOffset(const SliceIterator *it)$/;"	f
+main	./main.cpp	/^int main(int argc, char* argv[])$/;"	f
+os	./ycm_extra_conf.py	/^import os$/;"	i
+pSliceDesc	./SliceIterator.h	/^    SliceDesc *pSliceDesc; $/;"	m	struct:__anon3
+setUp	./CExampleTest.cpp	/^void CExampleTest::setUp()$/;"	f	class:CExampleTest
+sliceInRange	./SliceIterator.cpp	/^int sliceInRange(const SliceDesc *slice_desc)$/;"	f
+start	./SliceIterator.h	/^	unsigned long start;\/\/起始下标$/;"	m	struct:__anon1
+tearDown	./CExampleTest.cpp	/^void CExampleTest::tearDown()$/;"	f	class:CExampleTest
+ycm_core	./ycm_extra_conf.py	/^import ycm_core$/;"	i

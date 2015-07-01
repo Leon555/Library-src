@@ -1,0 +1,111 @@
+/*
+ * Name: list -- list the files and directories for some path
+ * Description: 
+ * Arguments: path: the path whose contents will be displayed
+              recursively: if true, lists the contents of the directories;
+                           if false, treats directories same as files.
+ * Return Values: void
+ */
+static void list(char *path, bool recursively);
+
+/*
+ * considerations: switches for which files to be listed
+ *                  all_except_dot, list_all, dereference_symlinks
+ */
+
+
+/*
+ * functions: 1, opendir, readdir, and closedir to manipulate directories
+ *             2, stat to get the inode information of a file
+ */
+#include <dirent.h>
+DIR* opendir(const char *path);
+struct dirent *readdir(DIR *dir);
+int closedir(DIR *dir);
+/*
+ * Macros: S_IFMT, S_IFDIR, S_IFCHR, S_IFBLK, S_IFREG, S_IFIFO, S_IFLINK, S_IFSOCK
+ */
+
+#include <sys/stat.h>
+int stat(const char *restrict path, struct stat *restrict file_stat);
+
+/*
+ * Data Structures: struct stat
+ */
+#include <sys/stat.h>
+#include <asm-generic/stat.h>
+struct stat {
+	unsigned long	st_dev;		/* Device.  */
+	unsigned long	st_ino;		/* File serial number.  */
+	unsigned int	st_mode;	/* File mode.  */
+	unsigned int	st_nlink;	/* Link count.  */
+	unsigned int	st_uid;		/* User ID of the file's owner.  */
+	unsigned int	st_gid;		/* Group ID of the file's group. */
+	unsigned long	st_rdev;	/* Device number, if device.  */
+	unsigned long	__pad1;
+	long		st_size;	/* Size of file, in bytes.  */
+	int		st_blksize;	/* Optimal block size for I/O.  */
+	int		__pad2;
+	long		st_blocks;	/* Number 512-byte blocks allocated. */
+	int		st_atime;	/* Time of last access.  */
+	unsigned int	st_atime_nsec;
+	int		st_mtime;	/* Time of last modification.  */
+	unsigned int	st_mtime_nsec;
+	int		st_ctime;	/* Time of last status change.  */
+	unsigned int	st_ctime_nsec;
+	unsigned int	__unused4;
+	unsigned int	__unused5;
+};
+
+/*
+ * Name: list -- list the files and directories for some path
+ * Description: 
+ * Arguments: path: the path whose contents will be displayed
+              recursively: if true, lists the contents of the directories;
+                           if false, treats directories same as files.
+ * Return Values: void
+ */
+static void list(char *path, bool recursively);
+
+/*
+ * functions: 1, opendir, readdir, and closedir to manipulate directories
+ *             2, stat to get the inode information of a file
+ */
+#include <dirent.h>
+DIR* opendir(const char *path);
+struct dirent *readdir(DIR *dir);
+int closedir(DIR *dir);
+/*
+ * Macros: S_IFMT, S_IFDIR, S_IFCHR, S_IFBLK, S_IFREG, S_IFIFO, S_IFLINK, S_IFSOCK
+ */
+
+#include <sys/stat.h>
+int stat(const char *restrict path, struct stat *restrict file_stat);
+
+/*
+ * Data Structures: struct stat
+ */
+#include <sys/stat.h>
+#include <asm-generic/stat.h>
+struct stat {
+	unsigned long	st_dev;		/* Device.  */
+	unsigned long	st_ino;		/* File serial number.  */
+	unsigned int	st_mode;	/* File mode.  */
+	unsigned int	st_nlink;	/* Link count.  */
+	unsigned int	st_uid;		/* User ID of the file's owner.  */
+	unsigned int	st_gid;		/* Group ID of the file's group. */
+	unsigned long	st_rdev;	/* Device number, if device.  */
+	unsigned long	__pad1;
+	long		st_size;	/* Size of file, in bytes.  */
+	int		st_blksize;	/* Optimal block size for I/O.  */
+	int		__pad2;
+	long		st_blocks;	/* Number 512-byte blocks allocated. */
+	int		st_atime;	/* Time of last access.  */
+	unsigned int	st_atime_nsec;
+	int		st_mtime;	/* Time of last modification.  */
+	unsigned int	st_mtime_nsec;
+	int		st_ctime;	/* Time of last status change.  */
+	unsigned int	st_ctime_nsec;
+	unsigned int	__unused4;
+	unsigned int	__unused5;
+};

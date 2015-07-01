@@ -1,0 +1,13 @@
+diff --git a/1.txt b/1.txt
+old mode 100644
+new mode 100755
+index 3f193a3..4acbb5d
+--- a/1.txt
++++ b/1.txt
+@@ -4,5 +4,5 @@ int main()
+ {
+ 	printf("hello world\n");
+ 
+-	exit(0);
++	return 0;
+ }

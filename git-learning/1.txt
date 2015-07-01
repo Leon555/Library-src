@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+	printf("hello world\n");
+
+	return 0;
+}
+
+int main()
+{
+	printf("hello world\n");
+
+	return 0;
+}
+
+int main()
+{
+	printf("hello world\n");
+
+	return 0;
+}
+
+int main()
+{
+	printf("hello world\n");
+
+	return 0;
+}
+
+add 1
+int main()
+{
+	printf("hello world\n");
+
+	return 0;
+}
+
+31
+32
+33
+34
+35
+36
+38
+39
+40

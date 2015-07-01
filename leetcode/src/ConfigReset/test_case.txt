@@ -1,0 +1,32 @@
+backplane abort
+
+r
+r b
+r bo
+r bod
+b d
+b a
+ba a
+a
+b
+reset
+reset board  
+board add 
+board delete 
+reboot backplane
+backplane abort
+unkown command 
+
+r
+reb
+r b
+a b
+bo a
+boa del
+rebo bac
+baclane ab
+reset
+reset board
+board add
+board delete
+

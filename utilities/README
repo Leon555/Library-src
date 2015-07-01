@@ -1,0 +1,15 @@
+Some Notes:
+1, Directory structure: miniature on gnu coreutils
+    conf    — env conf, make conf, etc.
+    doc     - documentations
+    lib     - supporting lib files for this tools
+    man     - man files
+    scripts - scripts to prepare builds and configurations
+    src     - source files
+    tests   - tests files
+    
+2, Makefile: like APUE 3e, 
+
+3, TODO: to-do list
+
+4. 

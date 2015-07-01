@@ -1,0 +1,48 @@
+/*
+ * Data Structures: struct file_info, enum filetype
+ */
+struct file_info {
+    char            *name;
+    char            *linkname;
+    struct stat     stat;
+    enum filetype   filetype;
+    
+    bool            link_ok;
+    bool            stat_ok;
+};
+
+enum filetype
+  {
+    unknown,
+    fifo,
+    chardev,
+    directory,
+    blockdev,
+    normal,
+    symbolic_link,
+    sock,
+    whiteout,
+    arg_directory
+  };
+  
+/*
+ * switch list: ls switches likewise
+ * supporting both short options and long options
+ */
+static bool all_except_dot = false;     /* -A */
+static bool list_all = false;           /* -a */
+static bool sort_by_ctime = false;      /* -c */
+static bool with_color = false;         /* --color */
+static bool full_time = false;          /* --full-time */
+static bool human_readable = false;     /* -h, --human-readble */
+static bool with_ino = false;           /* -i */
+static bool long_format = false;        /* -l */
+static bool dereference_symlinks = false; /* -L, --dereference */
+static bool width_with_comma = false;   /* -m */
+static bool numeric_uid_gid = false;    /* -n, --numeric-uid-gid */
+static bool reverse_order = false;      /* -r */
+static bool recursively_listing = false;/* -R */
+static bool sort_by_file_size = false;       /* -S */
+static bool sort_by_mtime = false;      /* -t */
+static bool one_file_per_line = false;  /* -1 */
+static bool with_version = false;       /* --version */

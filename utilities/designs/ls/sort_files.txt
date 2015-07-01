@@ -1,0 +1,14 @@
+/*
+ * Name: sort_files -- sort the files&directories by some criterion
+ * Description: 
+ * Arguments: 
+ * Return Values: void
+ */
+static void sort_files(struct file_info **sorted_files);
+static void sort_by_time(struct file_info **sorted_files);
+static void sort_by_size(struct file_info **sorted_files);
+
+/*
+ * considerations: switches in which ways the files should be sorted
+ *                  sort_by_ctime, sort_by_size, sort_by_mtime, 
+ */

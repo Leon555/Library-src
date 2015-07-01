@@ -1,0 +1,14 @@
+/*
+ * Name: print_files -- print the files in file_info array
+ * Description: 
+ * Arguments: 
+ * Return Values: void
+ */
+static void print_files(struct file_info **sorted_files);
+
+/*
+ * considerations: switches for the listing appearance
+ *                  with_color, full_time, human_readable, long_format,
+ *                  width_with_comma, numeric_uid_gid, one_file_per_line
+ *                  with_ino, raw_entry_names, list_dir
+ */

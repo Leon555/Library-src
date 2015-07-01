@@ -1,0 +1,6 @@
+<li><a href="sl_gs.pdf" target="_top">Simulink Getting Started Guide</a></li>
+<li><a href="sl_using.pdf" target="_top">Simulink User's Guide</a></li>
+<li><a href="slgui.pdf" target="_top">Simulink Graphical User Interface</a></li>
+<li><a href="slref.pdf" target="_top">Simulink Reference</a></li>
+<li><a href="sfunctions.pdf" target="_top">Developing S-Functions</a></li>
+<li><a href="rn.pdf" target="_top">Simulink Release Notes</a></li>
